@@ -2,7 +2,7 @@
 
 Small tutorial about writing a good Python code and the tools to check that it is.
 
-A good Python code should be [tested](test), [documented](documentation), [type-checked](type-check), [PEP-8 compliant](pep-8-compilance) and [formatted](format).
+A good Python code should be [tested](#test), [documented](#documentation), [type-checked](#type-check), [PEP-8 compliant](#pep-8-compilance) and [formatted](#format).
 
 ## Test
 
@@ -27,7 +27,7 @@ Each public element should be documented with a [docstring](https://peps.python.
 
 Do not over comment the code: explain technical choices (name of the algorithm, design pattern used, etc.) and consequences of them (e.g. `:warning: very precise but slow, if a margin error of up to 2% is not a problem consider using XXX instead`). If you think that the content of a function needs to be commented for other reasons, consider simplifying it and using more relevant names before writing the comment.
 
-Write examples with [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](test). Running them allows checking that the examples are still working.
+Write examples with [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](#test). Running them allows checking that the examples are still working.
 
 ### Generate
 
