@@ -19,7 +19,7 @@ The standard testing tool for Python is [pytest](https://docs.pytest.org/en/late
 pytest
 # execute unit tests with coverage mesurement
 pytest --cov
-# execute doctests
+# execute doctests (specify PACKAGE_LOCATION to avoid running unit tests)
 pytest PACKAGE_LOCATION --doctest-modules
 ```
 
