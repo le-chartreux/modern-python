@@ -6,6 +6,10 @@ A good Python code should be [tested](#test), [documented](#documentation), [typ
 
 ## Test
 
+Tests must be atomic: write one test function per execution case of the element you are testing.
+
+Tests should be documented: write at least a short docstring starting with "It" to explain the expected behavior. 
+
 The standard testing tool for Python is [pytest](https://docs.pytest.org/en/latest/), a framework to write unit tests. To measure the code coverage (degree to which the source code of a program is executed while running its test suite), use the module [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/). [pytest](https://docs.pytest.org/en/latest/) can also run the doctests.
 
 ### Usage:
@@ -18,6 +22,18 @@ pytest --cov
 # execute doctests
 pytest PACKAGE_LOCATION --doctest-modules
 ```
+
+### Example of unit test
+
+```python
+def test_from_preferences_os_posix(monkeypatch: pytest.MonkeyPatch) -> None:
+    """It calls the function to load preferences for posix when it's posix."""
+    monkeypatch.setattr(os, "name", "posix")
+    monkeypatch.setattr(Language, "_from_preferences_posix", lambda: Language.FRENCH)
+    assert Language.from_preferences() == Language.FRENCH
+```
+
+Source: [test_language.py by le-chartreux on hypermodern-python-tuto](https://github.com/le-chartreux/hypermodern-python-tuto/blob/master/test/wikipedia/test_language.py#L17).
 
 ## Documentation
 
