@@ -2,7 +2,7 @@
 
 Small tutorial about writing a good Python code and the tools to check that it is.
 
-A good Python code should be [tested](#test), [documented](#documentation), [type-checked](#type-check), [PEP-8 compliant](#pep-8-compilance) and [formatted](#format).
+A good Python code should be [tested](#test), [documented](#documentation), [type-checked](#type-check), [PEP-8 compliant](#pep-8-compilance) and [formatted](#format). A good Python project must have a clean [file architecture](#file-architecture), be simple to [contribute](#contribute) and have an easy [deployment](#deploy).
 
 ## Test
 
@@ -131,3 +131,8 @@ strict = true
 
 ## Format
 
+## File architecture
+
+## Contribute
+
+## Deploy
