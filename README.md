@@ -110,7 +110,7 @@ To host the [Sphinx](https://www.sphinx-doc.org/en/master/) documentation, you c
 
 ## Type-check
 
-Many type-checkers are available for Python. I use the classic one, [MyPy](https://mypy.readthedocs.io/en/stable/index.html), because it covers all my needs. The main other solutions are [pytype](https://github.com/google/pytype) from Google and [Pyre](https://pyre-check.org/) from Facebook. [pytype](https://github.com/google/pytype) can work without type annotations, and [Pyre](https://pyre-check.org/) is performance-oriented.
+Many type-checkers are available for Python. I use the classic one, [mypy](https://mypy.readthedocs.io/en/stable/index.html), because it covers all my needs. The main other solutions are [pytype](https://github.com/google/pytype) from Google and [Pyre](https://pyre-check.org/) from Facebook. [pytype](https://github.com/google/pytype) can work without type annotations, and [Pyre](https://pyre-check.org/) is performance-oriented.
 
 ### Usage
 
