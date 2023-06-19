@@ -118,6 +118,15 @@ Many type-checkers are available for Python. I use the classic one, [MyPy](https
 mypy CODE_LOCATIONS
 ```
 
+### Configuration
+
+Use `strict` to enable all optional error checking flags.
+
+```toml
+[tool.mypy]
+strict = true
+```
+
 ## PEP-8 compilance
 
 ## Format
