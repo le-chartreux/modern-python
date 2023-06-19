@@ -23,6 +23,21 @@ pytest --cov
 pytest src/ --doctest-modules
 ```
 
+### Configuration
+
+```toml
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_python_tuto"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+```
+
 ### Example of unit test
 
 ```python
