@@ -93,8 +93,6 @@ sphinx-build docs/ docs/_build
 
 To host the [Sphinx](https://www.sphinx-doc.org/en/master/) documentation, you can use [Read the Docs](https://readthedocs.org/).
 
-## PEP-8 compliance
-
 ## Type-check
 
 ## PEP-8 compilance
