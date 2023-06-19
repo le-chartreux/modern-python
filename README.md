@@ -26,14 +26,14 @@ pytest src/ --doctest-modules
 ### Example of unit test
 
 ```python
-def test_from_preferences_os_posix(monkeypatch: pytest.MonkeyPatch) -> None:
-    """It calls the function to load preferences for posix when it's posix."""
-    monkeypatch.setattr(os, "name", "posix")
-    monkeypatch.setattr(Language, "_from_preferences_posix", lambda: Language.FRENCH)
-    assert Language.from_preferences() == Language.FRENCH
+def test_from_preferences_os_unsupported(monkeypatch: pytest.MonkeyPatch) -> None:
+    """It can't search preferred language on an unsupported os."""
+    monkeypatch.setattr(os, "name", "unsupported")
+    with pytest.raises(RuntimeError):
+        Language.from_preferences()
 ```
 
-Source: [test_language.py by le-chartreux on hypermodern-python-tuto](https://github.com/le-chartreux/hypermodern-python-tuto/blob/master/test/wikipedia/test_language.py#L17).
+Source: [test_language.py by le-chartreux on hypermodern-python-tuto](https://github.com/le-chartreux/hypermodern-python-tuto/blob/master/test/wikipedia/test_language.py#L31).
 
 ## Documentation
 
