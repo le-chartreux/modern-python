@@ -12,7 +12,7 @@ Tests should be documented: write at least a short docstring starting with "It" 
 
 The standard testing tool for Python is [pytest](https://docs.pytest.org/en/latest/), a framework to write unit tests. To measure the code coverage (degree to which the source code of a program is executed while running its test suite), use the module [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/). [pytest](https://docs.pytest.org/en/latest/) can also run the doctests.
 
-### Usage:
+### Usage
 
 ```sh
 # execute unit tests
