@@ -2,7 +2,7 @@
 
 Small tutorial about the key aspects of writing good Python programs and the tools available to ensure its quality.
 
-A good Python code should be [tested](#test), [documented](#documentation), [type-checked](#type-check), [PEP-8 compliant](#pep-8-compilance) and [formatted](#format). 
+To create a good Python program, it is essential to focus on both the quality of the code and the overall project structure. A good Python code should be [tested](#test), [documented](#documentation), [type-checked](#type-check), [PEP-8 compliant](#pep-8-compilance) and [formatted](#format). 
 A good Python project must have a clean [file architecture](#file-architecture), be simple to [contribute](#contribute) and have an easy [deployment](#deploy).
 
 ## Test
