@@ -8,7 +8,7 @@ Each public element have a [docstring](https://peps.python.org/pep-0257/), follo
 
 ## Short
 
-Do not over comment the code: explain technical choices (name of the algorithm, design pattern used, etc.) and consequences of them (e.g. `:warning: very precise but slow, if a margin error of up to 2% is not a problem consider using XXX instead`). If you think that the content of a function needs to be commented for other reasons, consider simplifying it and using more relevant names before writing the comment.
+When commenting your code, avoid excessive details and focus on explaining technical choices such as the algorithm or design pattern used, along with any revelant consequences (e.g. `:warning: very precise but slow, if a margin error of up to 2% is not a problem consider using XXX instead`). If you feel that a function requires additional comments, consider simplifying the code and using more descriptive names before resorting to comments.
 
 ## Examples
 
