@@ -1,14 +1,13 @@
 # PEP-8 compilance
 
-[PEP-8](https://peps.python.org/pep-0008/) is a set of rules to write Pythonic code. To check that the code respect it, we use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)). The two most-used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/), but I do prefer another one: [Ruff](#ruff).
+[PEP-8](https://peps.python.org/pep-0008/) is a set of rules for writing Pythonic code. To ensure that the code adheres to these rules, you can use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)). While two most commonly used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/), I prefer to use a different one: [Ruff](#ruff).
 
 ## Ruff
 
-[Ruff](https://beta.ruff.rs/docs/) has multiple advantages:
-- It allows you to check [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/) rules.
-- The checking is faster (like realy faster, 10 to 100 times faster than [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/)).
-- You don't have to care about installing a massive set of additional plugins because they are already shipped with [Ruff](https://beta.ruff.rs/docs/).
-
+[Ruff](https://beta.ruff.rs/docs/) has several advantages:
+- Support for [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/) rules.
+- Faster checking, 10 to 100 times faster than [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/).
+- No need for additional plugins, because they are already shipped with [Ruff](https://beta.ruff.rs/docs/).
 
 ### Usage
 
