@@ -13,18 +13,18 @@ Maintaining consistent formatting across your project is a simple yet effective 
 ### Usage
 
 ```sh
-# format all the Python code of your project
+# format all the Python files of your project
 black .
 ```
 
 ## isort
 
-[isort](https://pycqa.github.io/isort/index.html) allows to format a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list in 3 parts, as [PEP-8](https://peps.python.org/pep-0008/) recommands it: first the standard library, then the third parties, and finally your package. 
+[isort](https://pycqa.github.io/isort/index.html) it a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://peps.python.org/pep-0008/): first the standard library, then the third-party modules, and finally your own package. 
 
 ### Usage
 
 ```sh
-# format all the Python code
+# order all the imports of your Python files
 isort .
 ```
 
