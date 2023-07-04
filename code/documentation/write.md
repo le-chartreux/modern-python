@@ -22,13 +22,13 @@ def from_preferences(cls) -> Self:
     """Search for the preferred language in the computer's settings.
 
     Since the computer settings vary a lot depending on the operating system,
-    this function works on posix and Windows only.
+    this function works on POSIX and Windows only.
 
     Returns:
         The preferred language.
 
     Raises:
-        RuntimeError: If the os name is not posix nor Windows.
+        RuntimeError: If the os name is not POSIX nor Windows.
 
     Examples:
         >>> language = Language.from_preferences()
