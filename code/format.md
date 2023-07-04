@@ -1,15 +1,19 @@
 # Format
 
-Having a consistent formating across your project is something very simple to automate yet that bring a lot to the lisibility of your code. I use two complementary formatters: [isort](#isort) to sort imports, and [black](#black) for the rest of the code.
+Maintaining consistent formatting across your project is a simple yet effective way to improve the readability of your code. To achieve this, I use two complementary formatters: [isort](#isort) for sorting imports, and [black](#black) for the rest of the code.
 
 ## black
 
-[black](https://black.readthedocs.io/en/stable/) is a code formatter that aims to be the standard formatting tool for Python. It is easy to use, [PEP-8](https://peps.python.org/pep-0008/) friendly (of course) and it offers minimal configuration options (that is cool because you don't want a formatter to format differently across different developers).
+[black](https://black.readthedocs.io/en/stable/) is a code formatter that aims to be the standard formatting tool for Python. It has many advantages:
+- Ease of [use](#usage).
+- [PEP-8](https://peps.python.org/pep-0008/) compliance (of course).
+- Minimalistic configuration, which ensures that the formatting stays consistent across different developers.
+- Deterministic (it always produces the same output), so it can be used on [CI/CD](https://en.wikipedia.org/wiki/CI/CD#:~:text=In%20software%20engineering%2C%20CI%2FCD,development%20or%20continuous%20software%20development.).
 
 ### Usage
 
 ```sh
-# format all the Python code
+# format all the Python code of your project
 black .
 ```
 
