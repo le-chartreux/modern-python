@@ -12,7 +12,7 @@ When commenting your code, avoid excessive details and focus on explaining techn
 
 ## Examples
 
-When providing examples, use [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](../test/tools.md) to ensure they are still functional. This is an effective way to check that your documentation stays up-to-date.
+When providing examples, use [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](../test/execution.md) to ensure they are still functional. This is an effective way to check that your documentation stays up-to-date.
 
 ## Example with Google style
 
