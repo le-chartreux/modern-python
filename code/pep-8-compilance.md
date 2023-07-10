@@ -17,7 +17,7 @@ ruff .
 
 ### Configuration
 
-Add the following configuration to your `pyproject.toml` with `"YOUR PACKAGE NAME"` of the part `tool.ruff.isort` replaced with your package name (of course) and same of `"MAYBE PRIVATE NAME OF YOUR PACKAGE"` if you have some private packages.
+Add the following configuration to your `pyproject.toml` with `"YOUR PACKAGE NAME"` of the part `tool.ruff.isort` replaced with your package name (of course), and same for `"MAYBE PRIVATE NAME OF YOUR PACKAGE"` if you have some private packages.
 
 ```toml
 [tool.ruff]
