@@ -27,7 +27,7 @@ pytest src/ --doctest-modules
 
 ### Configuration
 
-Put the following configuration in your `pyproject.toml`.
+Put the following configuration in your `pyproject.toml`. Replace 
 
 ```toml
 [tool.coverage.paths]
