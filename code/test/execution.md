@@ -25,7 +25,15 @@ pytest --cov
 pytest src/ --doctest-modules
 ```
 
-### Configuration
+### Mock
+
+To [mock](https://en.wikipedia.org/wiki/Mock_object) elements, you have the choice between using the traditional [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) or one of its wrappers, such as [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) which brings a more pytest-like style to your mocking. 
+
+### Coverage
+
+If you want to measure the code coverage of your Python program (i.e., the degree to which its source code is executed while running its test suite), you can use the [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) module. This module provides a simple and effective way to generate coverage reports for your tests.
+
+#### Configuration
 
 Put the following configuration in your `pyproject.toml`, with `YOUR_PACKAGE_NAME` in `[tool.coverage.run]` replaced with your package name (of course).
 
@@ -41,11 +49,3 @@ source = ["YOUR_PACKAGE_NAME"]
 show_missing = true
 fail_under = 100
 ```
-
-### Mock
-
-To [mock](https://en.wikipedia.org/wiki/Mock_object) elements, you have the choice between using the traditional [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) or one of its wrappers, such as [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) which brings a more pytest-like style to your mocking. 
-
-### Coverage
-
-If you want to measure the code coverage of your Python program (i.e., the degree to which its source code is executed while running its test suite), you can use the [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) module. This module provides a simple and effective way to generate coverage reports for your tests.
