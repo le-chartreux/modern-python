@@ -5,7 +5,7 @@
 ## Ruff
 
 [Ruff](https://beta.ruff.rs/docs/) has several advantages:
-- Support for [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/) rules.
+- Support for [pylint](https://pypi.org/project/pylint/) and [flake-8](https://flake8.pycqa.org/en/latest/) rules.
 - Faster checking, 10 to 100 times faster than [pylint](https://pypi.org/project/pylint/) and [flake-8]https://flake8.pycqa.org/en/latest/).
 - No need for additional plugins, because they are already shipped with [Ruff](https://beta.ruff.rs/docs/).
 
