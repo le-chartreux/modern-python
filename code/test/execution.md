@@ -19,7 +19,7 @@ To write tests, follow the [pytest documentation](https://docs.pytest.org/en/lat
 pytest
 # execute a specific file
 pytest tests/path/test_something.py
-# execute unit tests with coverage mesurement
+# execute unit tests with coverage measurement
 pytest --cov
 # execute doctests (specify src/ to avoid running unit tests)
 pytest src/ --doctest-modules
