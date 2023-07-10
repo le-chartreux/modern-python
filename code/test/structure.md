@@ -1,6 +1,6 @@
 # Structure
 
-To ensure ease of maintenance and contribution,  it's important that your tests follow a structure on their [name](#name), [content](#content) and [documentation](#documentation). You can refer to the [example of a unit test](#example-of-unit-test) at the end of this chapter for a practical demonstration.
+To ensure ease of maintenance and contribution,  it's important that your tests follow a structure on their [name](#name), [content](#content) and [documentation](#documentation). You can refer to the [example of a unit test](#example) at the end of this chapter for a practical demonstration.
 
 ## Name
 
