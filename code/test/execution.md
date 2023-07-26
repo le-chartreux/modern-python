@@ -4,7 +4,7 @@ The standard testing tool for Python is [pytest](#pytest), which has replaced [u
 
 ## pytest
 
-[pytest](https://docs.pytest.org/en/latest/) is a framework to write unit tests. It offers a number of advanced features such as fixtures, parametrization, and test discovery. In addition, it is modular, allowing you to improve [mocking](#mock) or mesure [coverage](#coverage) by adding plugins to meet your specific needs.
+[pytest](https://docs.pytest.org/en/latest/) is a framework for writing unit tests. It offers a number of advanced features such as fixtures, parametrization, and test discovery. In addition, it is modular, allowing you to improve [mocking](#mock) or mesure [coverage](#coverage) by adding plugins to meet your specific needs.
 
 ### Usage
 
