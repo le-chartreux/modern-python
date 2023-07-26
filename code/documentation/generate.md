@@ -1,6 +1,6 @@
 # Generate
 
-Once you have written the docstrings for your code, you can use [Sphinx](#sphinx) to generate documentation automatically. By using Sphinx to generate your documentation, you can ensure that it is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
+Once you have written the docstrings for your code, you can use [Sphinx](#sphinx) to automatically generate documentation. Sphinx ensures that your documentation is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
 
 ## Sphinx
 
@@ -21,3 +21,5 @@ To generate documentation using Sphinx, run the following command:
 ```sh
 sphinx-build docs/ docs/_build
 ```
+
+This will generate the documentation in the docs/_build directory.
