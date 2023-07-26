@@ -4,7 +4,7 @@ A good documentation should be well-[formatted](#format) and [concise](#short). 
 
 ## Format
 
-Each public element have a [docstring](https://peps.python.org/pep-0257/), following one of the many available formats such as [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings), [Epytext](https://epydoc.sourceforge.net/manual-epytext.html), [reStructuredText](https://peps.python.org/pep-0287/) or [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard). Choose one of them that suits your style and stick to it consistently. 
+Each public element have a [docstring](https://peps.python.org/pep-0257/), following one of the many available formats such as [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings), [Epytext](https://epydoc.sourceforge.net/manual-epytext.html), [reStructuredText](https://peps.python.org/pep-0287/) or [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard). Choose one of them that suits your style and stick to it consistently.
 
 ## Short
 
