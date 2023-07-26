@@ -5,6 +5,7 @@ Maintaining consistent formatting across your project is a simple yet effective 
 ## black
 
 [black](https://black.readthedocs.io/en/stable/) is a code formatter that aims to be the standard formatting tool for Python. It has many advantages:
+
 - Ease of [use](#usage).
 - [PEP-8](https://peps.python.org/pep-0008/) compliance (of course).
 - Minimalistic configuration, which ensures that the formatting stays consistent across different developers.
@@ -19,7 +20,7 @@ black .
 
 ## isort
 
-[isort](https://pycqa.github.io/isort/index.html) it a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://peps.python.org/pep-0008/): first the standard library, then the third-party modules, and finally your own package. 
+[isort](https://pycqa.github.io/isort/index.html) it a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://peps.python.org/pep-0008/): first the standard library, then the third-party modules, and finally your own package.
 
 ### Usage
 
