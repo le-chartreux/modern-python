@@ -27,7 +27,7 @@ pytest src/ --doctest-modules
 
 ### Mock
 
-To [mock](https://en.wikipedia.org/wiki/Mock_object) elements, you have the choice between using the traditional [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) or one of its wrappers, such as [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) which brings a more pytest-like style to your mocking. 
+To [mock](https://en.wikipedia.org/wiki/Mock_object) elements, you have the choice between using the traditional [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) or one of its wrappers, such as [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) which brings a more pytest-like style to your mocking.
 
 ### Coverage
 
