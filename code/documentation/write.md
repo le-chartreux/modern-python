@@ -1,6 +1,6 @@
 # Write
 
-A good documentation should be well-[formatted](#format) and [concise](#short). Don't hesitate to include [examples](#examples) to illustrate your points. You can find a complete example of effective documentation using Google style guidelines [there](#example-with-google-style)
+A good documentation should be well-[formatted](#format) and [concise](#short). Don't hesitate to include [examples](#examples) to illustrate your points. You can find a complete example of effective documentation using Google style guidelines [there](#example-with-google-style).
 
 ## Format
 
