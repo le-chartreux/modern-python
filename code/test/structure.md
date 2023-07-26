@@ -1,10 +1,10 @@
 # Structure
 
-To ensure ease of maintenance and contribution,  it's important that your tests follow a structure on their [name](#name), [content](#content) and [documentation](#documentation). You can refer to the [example of a unit test](#example) at the end of this chapter for a practical demonstration.
+To ensure ease of maintenance and contribution, it's important that your tests follow a structure in their [naming](#name), [content](#content), and [documentation](#documentation). You can refer to the [example of unit test](#example) at the end of this chapter for a practical demonstration.
 
 ## Name
 
-On major unit test frameworks, test functions must begin with `test_`. The format I use is `test_functionname_executioncase`. This naming convention makes it easy to identify the function being tested and the specific execution case, especially when reading the logs.
+In major unit test frameworks, test functions must begin with `test_`. The format I use is `test_functionname_executioncase`. This naming convention makes it easy to identify the function being tested and the specific execution case, especially when reading the logs.
 
 ## Content
 
@@ -18,7 +18,7 @@ Tests should be documented: write at least a short docstring starting with "It" 
 
 ```python
 def test_from_preferences_os_unsupported(monkeypatch: pytest.MonkeyPatch) -> None:
-    """It can't search preferred language on an unsupported os."""
+    """It can't search the preferred language on an unsupported OS."""
     monkeypatch.setattr(os, "name", "unsupported")
     with pytest.raises(RuntimeError):
         Language.from_preferences()
