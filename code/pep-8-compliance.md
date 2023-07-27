@@ -1,6 +1,6 @@
-# PEP-8 compliance
+# PEP 8 compliance
 
-[PEP-8](https://peps.python.org/pep-0008/) is a set of rules for writing Pythonic code. To ensure that the code adheres to these rules, you can use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)). While two most commonly used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8](https://flake8.pycqa.org/en/latest/), I prefer to use a different one: [Ruff](#ruff).
+[PEP 8](https://pep8.org/) is a set of rules for writing Pythonic code. To ensure that the code adheres to these rules, you can use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)). While the two most commonly used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8](https://flake8.pycqa.org/en/latest/), I prefer to use a different one: [Ruff](#ruff).
 
 ## Ruff
 
@@ -18,12 +18,12 @@ ruff .
 
 ### Configuration
 
-Add the following configuration to your `pyproject.toml` with `"YOUR PACKAGE NAME"` of the part `tool.ruff.isort` replaced with your package name (of course), and same for `"MAYBE PRIVATE NAME OF YOUR PACKAGE"` if you have some private packages.
+Add the following configuration to your `pyproject.toml`, with `"YOUR PACKAGE NAME"` in `tool.ruff.isort` replaced with your package name (of course), and the same for `"MAYBE PRIVATE NAME OF YOUR PACKAGE"` if you have some private packages.
 
 ```toml
 [tool.ruff]
 select = [
-    "A", # flake8-builtins (redefinition of bultins)
+    "A", # flake8-builtins (redefinition of built-ins)
     "ANN", # flake8-annotations (type annotations are everywhere)
     "ARG", # flake8-unused-arguments (unused argument in function/method/class/lambda)
     "B", # flake8-bugbear (bugs & design problems)
