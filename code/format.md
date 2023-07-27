@@ -7,9 +7,9 @@ Maintaining consistent formatting across your project is a simple yet effective 
 [black](https://black.readthedocs.io/en/stable/) is a code formatter that aims to be the standard formatting tool for Python. It has many advantages:
 
 - Ease of [use](#usage).
-- [PEP-8](https://peps.python.org/pep-0008/) compliance (of course).
+- [PEP 8](https://pep8.org/) compliance (of course).
 - Minimalistic configuration, which ensures that the formatting stays consistent across different developers.
-- Deterministic (it always produces the same output), so it can be used on [CI/CD](https://en.wikipedia.org/wiki/CI/CD#:~:text=In%20software%20engineering%2C%20CI%2FCD,development%20or%20continuous%20software%20development.).
+- Deterministic (it always produces the same output), so it can be used on [CI/CD](https://en.wikipedia.org/wiki/CI/CD).
 
 ### Usage
 
