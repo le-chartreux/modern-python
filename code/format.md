@@ -1,6 +1,6 @@
 # Format
 
-Maintaining consistent formatting across your project is a simple yet effective way to improve the readability of your code. To achieve this, I use two complementary formatters: [isort](#isort) for sorting imports, and [black](#black) for the rest of the code.
+Maintaining consistent formatting across your project is a simple yet effective way to improve the readability of your code. To achieve this, I use two complementary formatters: [isort](#isort) for sorting imports and [black](#black) for the rest of the code.
 
 ## black
 
@@ -9,7 +9,7 @@ Maintaining consistent formatting across your project is a simple yet effective 
 - Ease of [use](#usage).
 - [PEP 8](https://pep8.org/) compliance (of course).
 - Minimalistic configuration, which ensures that the formatting stays consistent across different developers.
-- Deterministic (it always produces the same output), so it can be used on [CI/CD](https://en.wikipedia.org/wiki/CI/CD).
+- Deterministic (it always produces the same output), so it can be used on [CI/CD](https://en.wikipedia.org/wiki/CI/CD) pipelines.
 
 ### Usage
 
