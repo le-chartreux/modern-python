@@ -20,7 +20,7 @@ black .
 
 ## isort
 
-[isort](https://pycqa.github.io/isort/index.html) it a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://peps.python.org/pep-0008/): first the standard library, then the third-party modules, and finally your own package.
+[isort](https://pycqa.github.io/isort/index.html) is a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://pep8.org/): first the standard library, then the third-party modules, and finally your own package.
 
 ### Usage
 
