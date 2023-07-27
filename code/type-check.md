@@ -12,7 +12,7 @@ mypy CODE_LOCATIONS
 
 ### Configuration
 
-To enable all optional error checking flags, use `strict`. 
+To enable all optional error checking flags, use `strict`.
 Add the following configuration to your pyproject.toml file:
 
 ```toml
