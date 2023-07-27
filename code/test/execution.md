@@ -1,6 +1,6 @@
 # Execution
 
-The standard testing tool for Python is [pytest](#pytest), which has replaced [unittest](https://docs.python.org/3/library/unittest.html) as the preferred testing framework. While [pytest](https://docs.pytest.org/en/latest/) improves upon [unittest](https://docs.python.org/3/library/unittest.html), it still allows you to run [unittest](https://docs.python.org/3/library/unittest.html) tests.
+The standard testing tool for Python is [pytest](https://docs.pytest.org/en/latest/), which has replaced [unittest](https://docs.python.org/3/library/unittest.html) as the preferred testing framework. While [pytest](https://docs.pytest.org/en/latest/) improves upon [unittest](https://docs.python.org/3/library/unittest.html), it still allows you to run [unittest](https://docs.python.org/3/library/unittest.html) tests.
 
 ## pytest
 

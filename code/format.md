@@ -1,6 +1,6 @@
 # Format
 
-Maintaining consistent formatting across your project is a simple yet effective way to improve the readability of your code. To achieve this, I use two complementary formatters: [isort](#isort) for sorting imports and [black](#black) for the rest of the code.
+Maintaining consistent formatting across your project is a simple yet effective way to improve the readability of your code. To achieve this, I use two complementary formatters: [isort](https://pycqa.github.io/isort/index.html) for sorting imports and [black](https://black.readthedocs.io/en/stable/) for the rest of the code.
 
 ## black
 
@@ -20,7 +20,7 @@ black .
 
 ## isort
 
-[isort](https://pycqa.github.io/isort/index.html) is a tool that formats a part of your code left untouched by [black](#black): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://pep8.org/): first the standard library, then the third-party modules, and finally your own package.
+[isort](https://pycqa.github.io/isort/index.html) is a tool that formats a part of your code left untouched by [black](https://black.readthedocs.io/en/stable/): the order of your import statements. It splits your import list into 3 parts, as recommended by [PEP-8](https://pep8.org/): first the standard library, then the third-party modules, and finally your own package.
 
 ### Usage
 

@@ -1,6 +1,6 @@
 # Type-check
 
-Python offers several type checkers, but one of the most popular and widely used is [mypy](https://mypy.readthedocs.io/en/stable/index.html). It is a classic type checker that covers all the basic needs of a developer. Other popular solutions include [pytype](https://github.com/google/pytype) from Google and [Pyre](https://pyre-check.org/) from Facebook. While [pytype](https://github.com/google/pytype) can work without type annotations, [Pyre](https://pyre-check.org/) is performance-oriented. Because it covers all my needs, I only use [mypy](#mypy).
+Python offers several type checkers, but one of the most popular and widely used is [mypy](https://mypy.readthedocs.io/en/stable/index.html). It is a classic type checker that covers all the basic needs of a developer. Other popular solutions include [pytype](https://github.com/google/pytype) from Google and [Pyre](https://pyre-check.org/) from Facebook. While [pytype](https://github.com/google/pytype) can work without type annotations, [Pyre](https://pyre-check.org/) is performance-oriented. Because it covers all my needs, I only use [mypy](https://mypy.readthedocs.io/en/stable/index.html).
 
 ## mypy
 

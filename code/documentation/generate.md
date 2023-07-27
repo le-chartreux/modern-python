@@ -1,6 +1,6 @@
 # Generate
 
-Once you have written the docstrings for your code, you can use [Sphinx](#sphinx) to automatically generate documentation. Sphinx ensures that your documentation is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
+Once you have written the docstrings for your code, you can use [Sphinx](https://www.sphinx-doc.org/en/master/) to automatically generate documentation. Sphinx ensures that your documentation is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
 
 ## Sphinx
 
