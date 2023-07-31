@@ -6,8 +6,6 @@ Many popular Python projects, such as [pytest](https://github.com/pytest-dev/pyt
 
 This chapter focuses on using the src layout for a project. While the flat layout is also a popular choice, I prefer the src layout because it allows a cleaner declaration of private packages.
 
-## Shape
-
 The src layout for a package `my-package` looks like the following:
 
 ```sh
