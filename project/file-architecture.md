@@ -13,7 +13,7 @@ While the flat layout is also a popular choice, the src layout allows for a clea
 
 The src layout for a package `my-package` looks like the following:
 
-```bash
+```txt
 my-package/
  │
  ├── docs/
