@@ -11,22 +11,28 @@ This chapter focuses on using the src layout for a project. While the flat layou
 The src layout for a package `my-package` looks like the following:
 
 ```sh
-.
-├── docs/
-│    └── ...
-├── src/
-│    ├── my_package/
-│    │  ├── __init__.py
-│    │  └── __main__.py
-│    └── _my_package/
-│       ├── __init__.py
-│       └── 
-├── tests/
-│    ├── my_package/
-│    │  └── ...
-│    └── _my_package/
-│       └── ...
-├── README.md
-├── pyproject.toml
-└── ...  # other config files
+my-package/
+ │
+ ├── docs/
+ │    └── ...
+ │
+ ├── src/
+ │    ├── my_package/
+ │    │  ├── __init__.py
+ │    │  └── __main__.py
+ │    │
+ │    └── _my_package/
+ │       ├── __init__.py
+ │       └── ...
+ │
+ ├── tests/
+ │    ├── my_package/
+ │    │  └── ...
+ │    │
+ │    └── _my_package/
+ │       └── ...
+ │
+ ├── README.md
+ ├── pyproject.toml
+ └── ...  # other config files
 ```
