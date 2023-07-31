@@ -23,13 +23,16 @@ my-package/
  │    │
  │    └── _my_package/
  │       ├── __init__.py
+ │       ├── something.py
  │       └── ...
  │
  ├── tests/
  │    ├── my_package/
- │    │  └── ...
+ │    │  ├── test___init__.py
+ │    │  └── test___main__.py
  │    │
  │    └── _my_package/
+ │       ├── test_something.py
  │       └── ...
  │
  ├── README.md
