@@ -40,3 +40,38 @@ my-package/
  ├── pyproject.toml
  └── ...  # other config files
 ```
+
+With this architecture, sources are in a dedicated `src` folder (as we can expect from the *src* layout).
+The `src` folder contains multiple packages: the [public package](#public-package) (`my_package`), the [private package](#private-package) (`_my_package`), and maybe others packages depending on needs (e.g. REST API, demonstration, etc.).
+You can also notice that the structure of the `tests` folder mirrors the one in `src`, to easily find the test file of a module.
+
+## Public package
+
+The public package (`my_package`) is an interface that almost don't contain code.
+It is used to provide a clear and controled API to the user: this way the user does not have to know the internal architecture of the project, and the developers are free to modify the internal architecture as they want while the API does not changes.
+The public package contains usually one or two files: [`__init__.py`](#__init__py) and [`__main__.py`](#__main__py).
+
+### `__init__.py`
+
+ The `__init__.py` imports the elements of `src/_my_package/` that you want to give access to the user.
+ This way the user will be able easily import element without caring about the internal structure of the package:
+
+ ```py
+# using the internal structure
+from my_package.subfolder.file_b import element_from_b
+# -> need to know the internal strucutre of the package
+# -> impacted by changes on the internal structure
+
+# using the elements imported in the __init__.py 
+from my_package import element_from_b
+# -> easy
+# -> not impacted by changes on the internal structure
+```
+
+### `__main__.py`
+
+If the package is executable, the `__main__.py` defines a main function that parses args and uses some elements imported by the `__init__.py`.
+
+## Private package
+
+The private package (`_my_package`) contains the true code of the project.
