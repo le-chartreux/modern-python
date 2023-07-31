@@ -15,16 +15,16 @@ The src layout for a package `my-package` looks like the following:
 ├── docs/
 │    └── ...
 ├── src/
-│    ├── my-package/
+│    ├── my_package/
 │    │  ├── __init__.py
 │    │  └── __main__.py
-│    └── _my-package/
+│    └── _my_package/
 │       ├── __init__.py
-│       └── ...
+│       └── 
 ├── tests/
-│    ├── my-package/
+│    ├── my_package/
 │    │  └── ...
-│    └── _my-package/
+│    └── _my_package/
 │       └── ...
 ├── README.md
 ├── pyproject.toml
