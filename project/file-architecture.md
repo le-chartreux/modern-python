@@ -23,8 +23,9 @@ my-package/
  │    │
  │    └── _my_package/
  │       ├── __init__.py
- │       ├── something.py
- │       └── ...
+ │       ├── file_a.py
+ |       └── subfolder/
+ │           └── file_b.py
  │
  ├── tests/
  │    ├── my_package/
@@ -32,8 +33,10 @@ my-package/
  │    │  └── test___main__.py
  │    │
  │    └── _my_package/
- │       ├── test_something.py
- │       └── ...
+ │       ├── test___init__.py
+ │       ├── test_file_a.py
+ |       └── subfolder/
+ │           └── test_file_b.py
  │
  ├── README.md
  ├── pyproject.toml
