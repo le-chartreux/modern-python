@@ -1,6 +1,8 @@
 # PEP 8 compliance
 
-[PEP 8](https://pep8.org/) is a set of rules for writing Pythonic code. To ensure that the code adheres to these rules, you can use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)). While the two most commonly used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8](https://flake8.pycqa.org/en/latest/), I prefer to use a different one: [Ruff](https://beta.ruff.rs/docs/).
+[PEP 8](https://pep8.org/) is a set of rules for writing Pythonic code.
+To ensure that the code adheres to these rules, you can use a static analysis tool called a [linter](https://en.wikipedia.org/wiki/Lint_(software)).
+While the two most commonly used Python linters are [pylint](https://pypi.org/project/pylint/) and [flake-8](https://flake8.pycqa.org/en/latest/), I prefer to use a different one: [Ruff](https://beta.ruff.rs/docs/).
 
 ## Ruff
 

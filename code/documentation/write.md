@@ -1,18 +1,22 @@
 # Write
 
-Effective documentation should be well-[formatted](#format) and [concise](#conciseness), with [examples](#examples) to illustrate your points. You can find at the end of this chapter a [complete example of an effective documentation using Google style guidelines](#example-with-google-style).
+Effective documentation should be well-[formatted](#format) and [concise](#conciseness), with [examples](#examples) to illustrate your points.
+You can find at the end of this chapter a [complete example of an effective documentation using Google style guidelines](#example-with-google-style).
 
 ## Format
 
-Each public element should have a [docstring](https://peps.python.org/pep-0257/), following one of the many available formats such as [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings), [Epytext](https://epydoc.sourceforge.net/manual-epytext.html), [reStructuredText](https://peps.python.org/pep-0287/), or [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard). Choose one that suits your style and stick to it consistently.
+Each public element should have a [docstring](https://peps.python.org/pep-0257/), following one of the many available formats such as [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings), [Epytext](https://epydoc.sourceforge.net/manual-epytext.html), [reStructuredText](https://peps.python.org/pep-0287/), or [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard).
+Choose one that suits your style and stick to it consistently.
 
 ## Conciseness
 
-When commenting your code, avoid excessive details and focus on explaining technical choices such as the algorithm or design pattern used, along with any relevant consequences (e.g. `:warning: very precise but slow, if a margin error of up to 2% is not a problem consider using XXX instead`). If you feel that a function requires additional comments, consider simplifying the code and using more descriptive names before resorting to comments.
+When commenting your code, avoid excessive details and focus on explaining technical choices such as the algorithm or design pattern used, along with any relevant consequences (e.g. `:warning: very precise but slow, if a margin error of up to 2% is not a problem consider using XXX instead`).
+If you feel that a function requires additional comments, consider simplifying the code and using more descriptive names before resorting to comments.
 
 ## Examples
 
-When providing examples, use [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](../test/execution.md) to ensure they are still functional. This is an effective way to check that your documentation stays up-to-date.
+When providing examples, use [doctests](https://docs.python.org/3/library/doctest.html) and execute them with [pytest](../test/execution.md) to ensure they are still functional.
+This is an effective way to check that your documentation stays up-to-date.
 
 ## Example with Google style
 

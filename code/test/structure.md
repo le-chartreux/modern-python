@@ -1,14 +1,18 @@
 # Structure
 
-To ensure ease of maintenance and contribution, it's important that your tests follow a structure in their [naming](#name), [content](#content), and [documentation](#documentation). You can refer to the [example of unit test](#example) at the end of this chapter for a practical demonstration.
+To ensure ease of maintenance and contribution, it's important that your tests follow a structure in their [naming](#name), [content](#content), and [documentation](#documentation).
+You can refer to the [example of unit test](#example) at the end of this chapter for a practical demonstration.
 
 ## Name
 
-In major unit test frameworks, test functions must begin with `test_`. The format I use is `test_functionname_executioncase`. This naming convention makes it easy to identify the function being tested and the specific execution case, especially when reading the logs.
+In major unit test frameworks, test functions must begin with `test_`.
+The format I use is `test_functionname_executioncase`.
+This naming convention makes it easy to identify the function being tested and the specific execution case, especially when reading the logs.
 
 ## Content
 
-Tests must be atomic: you should write one test function per execution case of the element you are testing. This approach makes it easier to identify and isolate any issues that may arise during testing.
+Tests must be atomic: you should write one test function per execution case of the element you are testing.
+This approach makes it easier to identify and isolate any issues that may arise during testing.
 
 ## Documentation
 

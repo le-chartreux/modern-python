@@ -1,10 +1,12 @@
 # Generate
 
-Once you have written the docstrings for your code, you can use [Sphinx](https://www.sphinx-doc.org/en/master/) to automatically generate documentation. Sphinx ensures that your documentation is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
+Once you have written the docstrings for your code, you can use [Sphinx](https://www.sphinx-doc.org/en/master/) to automatically generate documentation.
+Sphinx ensures that your documentation is consistent, up-to-date, and easy to read, making it easier for others to understand and use your code.
 
 ## Sphinx
 
-[Sphinx](https://www.sphinx-doc.org/en/master/) is a powerful tool used by the official Python documentation. It is modular and can be extended with various plugins, including:
+[Sphinx](https://www.sphinx-doc.org/en/master/) is a powerful tool used by the official Python documentation.
+It is modular and can be extended with various plugins, including:
 
 - [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html), the official plugin for generating API documentation from docstrings.
 - [napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html), the official plugin for compatibility with Google-style docstrings.
