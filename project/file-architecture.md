@@ -6,7 +6,7 @@ This chapter focuses on using the src layout for a project. While the flat layou
 
 ## Shape
 
-The src layout for a package 'my-package' looks like this:
+The src layout for a package 'my-package' looks like that:
 
 ```sh
 .
