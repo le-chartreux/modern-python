@@ -51,9 +51,9 @@ To use dynamic version based on VCS, follow these steps:
 
 ### Dependencies
 
-The `dependencies` attribute specifies dependencies that are mandatory to use the project.
+The `dependencies` attribute specifies mandatory dependencies required to use the project.
 You can specify particular version numbers (equal, superior, inferior).
-If you don't and the user does not have the dependency installed, the latest version will be downloaded.
+If you don't specify a version number and the user does not have the dependency installed, the latest version will be downloaded automatically.
 
 ### Optional dependencies
 
