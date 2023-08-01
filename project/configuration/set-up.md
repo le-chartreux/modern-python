@@ -31,10 +31,9 @@ The `pyproject.toml` file is divided in three main parts: [`[project]`](#project
 
 ## Project
 
-The `[project]` part provides various metadata about the project, that are used by different tools like PyPY.
-The two particular attributes that I will detail are [dynamic](#dynamic) and [dependencies](#dependencies).
-I will also mention the parts [`[project.optional-dependencies]`](#optional-dependencies) and [`[project.script]`](#scripts).
-You can find futher details about every attribute on the [PyPA specification](https://packaging.python.org/en/latest/specifications/declaring-project-metadata/).
+The `[project]` section provides metadata about the project, that is used by different tools like PyPI.
+The two particular attributes that are detailed are [dynamic](#dynamic) and [dependencies](#dependencies), along with the parts [`[project.optional-dependencies]`](#optional-dependencies) and [`[project.script]`](#scripts).
+For more information on each attribute and part, refer to the [PyPA specification](https://packaging.python.org/en/latest/specifications/declaring-project-metadata/).
 
 ### Dynamic
 
