@@ -75,5 +75,5 @@ However, when following the [code](../code/README.md) part of this tutorial, you
 
 ## Build-system
 
-The `[build-system]` is where you can configure your build system (obviously).
-I use [setuptool](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) to build my system because it's the most used, but if you want to use another one this section is where you will configure it.
+The `[build-system]` section is where you can configure your build system (obviously).
+I use [setuptool](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) as it's the most commonly used, but but you can use another build system and configure it in this section.
