@@ -1,10 +1,4 @@
-# Configuration
-
-The configuration of a Python project is crucial for ensuring that installation, development, and deployment are simple for contributors.
-In 2016, [PEP 518](https://peps.python.org/pep-0518/) was introduced, which specified that the configuration of Python projects should be contained in a unified file named `pyproject.toml`.
-This chapter will explain how to [set up](#set-up) and [use](#usage) a project with a `pyproject.toml` file.
-
-## Set up
+# Set up
 
 The `pyproject.toml` of a project looks like the following:
 
@@ -35,14 +29,14 @@ build-backend = "setuptools.build_meta"
 
 As you can see, `pyproject.toml` is divided in 3 main parts: [`[project]`](#project), [`[tool]`](#tool), and [`[build-system]`](#build-system).
 
-### Project
+## Project
 
 The `[project]` part provides various metadata about the project, that are used by different tools like PyPY.
 The two particular attributes that I will detail are [dynamic](#dynamic) and [dependencies](#dependencies).
 I will also mention the parts [`[project.optional-dependencies]`](#optional-dependencies) and [`[project.script]`](#scripts).
 You can find futher details about every attribute on the [PyPA specification](https://packaging.python.org/en/latest/specifications/declaring-project-metadata/).
 
-#### Dynamic
+### Dynamic
 
 Dynamic attributes are computed ones.
 In our case, we compute the version to don't write it at multiple places (and so divide our risks to forget to bump one when releasing).
@@ -50,34 +44,30 @@ But where should we store this version number if not in the `pyproject.toml`?
 The tool that suit this job the best is obviously our version manager.
 All we have to is to add `"version"` to the `dynamic` attribute, add `[tool.setuptools_scm]` later in our `pyproject.toml`, and specify in the `build-system.requires` part that we need `setuptools_scm[toml]>=6.2`.
 
-#### Dependencies
+### Dependencies
 
 The `dependencies` attribute specifies dependencies that are mandatory to use the project.
 You can specify particular version numbers (equal, superior, inferior).
 If you don't and the user does not have the dependency installed, the latest version will be downloaded.
 
-#### Optional dependencies
+### Optional dependencies
 
 In the `[project.optional-dependencies]` part, you can define multiple optional dependency groups.
 These optional dependency groups will not be downloaded by default.
 The most common is the `dev` group, but you can think of others (e.g. for an app that uses audio, the mp3 format can be in the standard distribution but the libraries for the flak format can be optional).
 Similarly to the [dependencies](#dependencies) attribute, you can specify particular version numbers.
 
-#### Scripts
+### Scripts
 
 In the `[project.scripts]` part, you can define entry points of executables of your project.
 When the project will be installed, the user will be able to execute the scripts by running the name of the command (here `my-project`).
 
-### Tool
+## Tool
 
 The [tool] part contains the configurations for the tools you will use on your project: [formatter](../code/format.md), [type-checker](../code/type-check.md), [test runner](../code/test/execution.md), etc.
 Here we only have `[tool.setuptools_scm]`, that is empty because we want to keep the default configuration, but when following the [code](../code/README.md) part of this tutorial you will fill it.
 
-### Build-system
+## Build-system
 
 The `[build-system]` is where you can configure your build system (obviously).
 I use [setuptool](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) to build my system because it's the most used, but if you want to use another one this section is where you will configure it.
-
-## Usage
-
-TODO
