@@ -37,11 +37,17 @@ For more information on each attribute and part, refer to the [PyPA specificatio
 
 ### Dynamic
 
-Dynamic attributes are computed ones.
-In our case, we compute the version to don't write it at multiple places (and so divide our risks to forget to bump one when releasing).
-But where should we store this version number if not in the `pyproject.toml`?
+Dynamic attributes are computed during the building of a project.
+The dynamic field indicates that the given element names are added by some tools at the time of building the project.
+
+For instance, in the example above, the version is computed to avoid writing it in multiple places and potentially forgetting to update it when bumping the version.
+But where should we store this version number, if not in the `pyproject.toml`?
 The tool that suit this job the best is obviously our version manager.
-All we have to is to add `"version"` to the `dynamic` attribute, add `[tool.setuptools_scm]` later in our `pyproject.toml`, and specify in the `build-system.requires` part that we need `setuptools_scm[toml]>=6.2`.
+To use dynamic version based on VCS, follow these steps:
+
+1) Add  `"version"` to the `dynamic` attribute.
+2) Append a section `[tool.setuptools_scm]` later in the `pyproject.toml`.
+3) Specify in the `build-system.requires` section that `setuptools_scm[toml]>=6.2` is required.
 
 ### Dependencies
 
