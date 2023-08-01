@@ -69,8 +69,9 @@ When the project is installed, the user will be able to execute the scripts by r
 
 ## Tool
 
-The [tool] part contains the configurations for the tools you will use on your project: [formatter](../code/format.md), [type-checker](../code/type-check.md), [test runner](../code/test/execution.md), etc.
-Here we only have `[tool.setuptools_scm]`, that is empty because we want to keep the default configuration, but when following the [code](../code/README.md) part of this tutorial you will fill it.
+The `[tool]` section contains configurations for the tools you will use on your project, such as [formatter](../code/format.md), [type-checker](../code/type-check.md), [test runner](../code/test/execution.md), etc.
+Here, we only have `[tool.setuptools_scm]`, which is empty because we want to keep the default configuration.
+However, when following the [code](../code/README.md) part of this tutorial, you will fill it.
 
 ## Build-system
 
