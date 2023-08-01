@@ -1,6 +1,6 @@
 # Set up
 
-The `pyproject.toml` of a project looks like the following:
+To set up a project with a `pyproject.toml` file, you will need to create a file with the following structure:
 
 ```toml
 [project]
@@ -27,7 +27,7 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 ```
 
-As you can see, `pyproject.toml` is divided in 3 main parts: [`[project]`](#project), [`[tool]`](#tool), and [`[build-system]`](#build-system).
+The `pyproject.toml` file is divided in three main parts: [`[project]`](#project), [`[tool]`](#tool), and [`[build-system]`](#build-system).
 
 ## Project
 
