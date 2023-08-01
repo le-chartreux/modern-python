@@ -57,9 +57,9 @@ If you don't specify a version number and the user does not have the dependency 
 
 ### Optional dependencies
 
-In the `[project.optional-dependencies]` part, you can define multiple optional dependency groups.
+In the  `[project.optional-dependencies]` section, you can define multiple optional dependency groups.
 These optional dependency groups will not be downloaded by default.
-The most common is the `dev` group, but you can think of others (e.g. for an app that uses audio, the mp3 format can be in the standard distribution but the libraries for the flak format can be optional).
+The most common is `dev` dev group, but you can create others as well (e.g. for an app that uses audio, the mp3 format can be in the standard distribution but the libraries for the flak format can be optional).
 Similarly to the [dependencies](#dependencies) attribute, you can specify particular version numbers.
 
 ### Scripts
