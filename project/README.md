@@ -1,4 +1,4 @@
-# Good Python project
+# Good Python Project
 
-A good Python project must have a clean [file architecture](file-architecture.md) and a good [configuration](configuration.md).
-By possessing these two key qualities, a Python project can attract more contributors and make it easier for them to contribute to the project.
+A good Python project should have a well-organized [file architecture](file-architecture.md) and a [configuration](configuration.md) that enables [automation](automation.md).
+By having these two essential qualities, a Python project can attract more contributors and make it easier for them to contribute to the project.
