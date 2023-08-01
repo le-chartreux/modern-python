@@ -64,8 +64,8 @@ Similarly to the [dependencies](#dependencies) attribute, you can specify partic
 
 ### Scripts
 
-In the `[project.scripts]` part, you can define entry points of executables of your project.
-When the project will be installed, the user will be able to execute the scripts by running the name of the command (here `my-project`).
+In the `[project.scripts] section, you can define entry points of executables for your project.
+When the project is installed, the user will be able to execute the scripts by running the name of the command (here`my-project`).
 
 ## Tool
 
