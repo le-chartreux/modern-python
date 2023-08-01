@@ -5,4 +5,4 @@ While it does not delve into [programming principles that apply to every modern 
 
 Creating a good Python program requires attention to both the [quality of the code](code/README.md) and the [overall project structure](project/README.md).
 The tutorial provides guidance on both of these aspects, with separate sections dedicated to code quality and project structure.
-By following these guidelines, you can ensure that your Python programs are not only functional but also maintainable and easy to understand
+By following these guidelines, you can ensure that your Python programs are not only functional but also maintainable and easy to understand.
