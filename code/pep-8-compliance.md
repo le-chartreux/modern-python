@@ -91,6 +91,7 @@ ignore = [
 ]
 "test*/" = [
     "ARG", # some arguments are unused in tests functions but useful (e.g. mocks)
+    "PLR2004", # magic value in comparison is OK for tests
     "S101", # asserts are OK for tests
     "SLF001" # accessing private members is OK for tests
 ]
