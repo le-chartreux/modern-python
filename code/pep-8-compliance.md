@@ -82,7 +82,7 @@ ignore = [
     "D100",   # docstrings at the top of public modules, but most of the time it's useless
     "D105",   # docstrings on magic methods, useless docstrings are well known 
     "E501",   # line size, but bug-bear already set it with a tolerance of 10% (B950)
-    "PD011 ", # use .to_numpy instead of .values, but raises a lot of false positives
+    "PD011", # use .to_numpy instead of .values, but raises a lot of false positives
 ]
 
 [tool.ruff.per-file-ignores]
