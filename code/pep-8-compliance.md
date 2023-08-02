@@ -25,7 +25,7 @@ Add the following configuration to your `pyproject.toml`, with `"YOUR PACKAGE NA
 ```toml
 [tool.ruff]
 select = [
-    "A", # flake8-builtins (redefinition of built-ins)
+    "A", # flake8-builtins (redefinition of bultins)
     "ANN", # flake8-annotations (type annotations are everywhere)
     "ARG", # flake8-unused-arguments (unused argument in function/method/class/lambda)
     "B", # flake8-bugbear (bugs & design problems)
@@ -78,19 +78,18 @@ ignore = [
     "ANN101", # missing type annotation for self, but hinting self all the time is useless
     "ANN102", # missing type annotation for cls but hinting cls all the time is useless
     "ANN401", # disallows Any, but some elements should be Any when they are external
-    "B024", # forces abstract classes to have at least one abstract method, but sometimes a class is virtually abstract
-    "D105", # docstrings on magic methods, useless docstrings are well known 
-    "E501" # line size, but bug-bear already set it with a tolerance of 10% (B950)
+    "B024",   # forces abstract classes to have at least one abstract method, but sometimes a class is virtually abstract
+    "D100",   # docstrings at the top of public modules, but most of the time it's useless
+    "D105",   # docstrings on magic methods, useless docstrings are well known 
+    "E501",   # line size, but bug-bear already set it with a tolerance of 10% (B950)
+    "PD011 ", # use .to_numpy instead of .values, but raises a lot of false positives
 ]
 
 [tool.ruff.per-file-ignores]
 "docs/conf.py" = [
     "A001" # redefine some builtins (like "copyright") is OK in docs
 ]
-"noxfile.py" = [
-    "D402" # repeating the name of the function is OK for nox since it's to display it to the user
-]
-"test/*" = [
+"test*/" = [
     "ARG", # some arguments are unused in tests functions but useful (e.g. mocks)
     "S101", # asserts are OK for tests
     "SLF001" # accessing private members is OK for tests
