@@ -29,4 +29,6 @@ For further information, refer to the [setuptools documentation](https://setupto
 ```sh
 # editable mode (aka development mode)
 pip install --editable . 
+# editable mode (short) with dev dependencies
+pip install -e .[dev]
 ```
