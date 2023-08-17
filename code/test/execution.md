@@ -7,7 +7,7 @@ While [pytest](https://docs.pytest.org/en/latest/) improves upon [unittest](http
 
 [pytest](https://docs.pytest.org/en/latest/) is a framework for writing unit tests.
 It offers a number of advanced features such as fixtures, parametrization, and test discovery.
-In addition, it is modular, allowing you to improve [mocking](#mock) or mesure [coverage](#coverage) by adding plugins to meet your specific needs.
+In addition, it is modular, allowing you to improve [mocking](#mock) and [ui](#ui), or to mesure [coverage](#coverage) by adding plugins to meet your specific needs.
 
 ### Usage
 
@@ -31,6 +31,11 @@ pytest src/ --doctest-modules
 ### Mock
 
 To [mock](https://en.wikipedia.org/wiki/Mock_object) elements, you have the choice between using the traditional [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) or one of its wrappers, such as [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) which brings a more pytest-like style to your mocking.
+
+### UI
+
+To improve the [pytest](https://docs.pytest.org/en/latest/) user interface, installing [pytest-sugar](https://github.com/Teemu/pytest-sugar) is all it takes.
+Once you've installed it, the package will be automatically invoked whenever you run the `pytest` command, so you don't need to make any changes to your workflow to start using it.
 
 ### Coverage
 
