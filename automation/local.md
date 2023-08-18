@@ -13,6 +13,15 @@ You can see [tox](https://tox.wiki/) as a [make](https://www.gnu.org/software/ma
 
 ### Usage
 
+```sh
+# run all the actions of env_list
+tox
+# run all the actions of the <format> label
+tox -m format
+# run the <pytest> action
+tox -e pytest
+```
+
 ### Configuration
 
 ```ini
