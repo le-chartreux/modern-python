@@ -23,6 +23,8 @@ tox
 tox -m format
 # run the <pytest> action
 tox -e pytest
+# list the available actions
+tox list
 ```
 
 ### Configuration
