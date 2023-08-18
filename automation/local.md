@@ -1,7 +1,11 @@
 # Local
 
-[Nox](https://nox.thea.codes/en/stable/)
-To run actions locally, my favorite tool is [tox](https://tox.wiki/).
+When it comes to running a sequence of actions, there are several options available, ranging from basic shell files to more sophisticated tools like [Make](https://www.gnu.org/software/make/manual/make.html).
+However, for local Python project execution, my personal favorite is [Tox](https://tox.wiki/).
+
+While there are other Python-specific tools like [Nox](https://nox.thea.codes/en/stable/) available, I find that they lack maturity and can be overly verbose compared to [Tox](https://tox.wiki/).
+In my opinion, the benefits of using a non-standard tool like [Nox](https://nox.thea.codes/en/stable/) are not significant enough to justify the migration effort and the potential risk of end-of-support.
+[Nox](https://nox.thea.codes/en/stable/) is essentially a copy of [Tox](https://tox.wiki/) with a Python script for configuration instead of an `ini` file, but some of its functions may not work as intended.
 
 ## Tox
 
