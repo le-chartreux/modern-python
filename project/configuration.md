@@ -17,6 +17,10 @@ dynamic = ["version"]
 
 dependencies = ["dependency1>=13.2", "dependency2=1.0.0", "dependency3",]
 
+[project.urls]
+"Homepage" = "https://github.com/YOUR_USERNAME/YOUR_PROJECT"
+"Bug Tracker" = "https://github.com/YOUR_USERNAME/YOUR_PROJECT/issues"
+
 [project.optional-dependencies]
 dev = ["dev-dependency1", "dev-dependency2>=2.1",]
 
