@@ -14,7 +14,7 @@ You can see [Tox](https://tox.wiki/) as a [make](https://www.gnu.org/software/ma
 ### Usage
 
 [Tox](https://tox.wiki/) is a user-friendly tool that is easy to use.
-While you can find more commands in the [Tox user guide](https://tox.wiki/en/latest/user_guide.html) or the [documentation of the Tox CLI](https://tox.wiki/en/latest/cli_interface.html), there are three main commands to remember:
+While you can find more commands in the [Tox user guide](https://tox.wiki/en/latest/user_guide.html) or the [documentation of the Tox CLI](https://tox.wiki/en/latest/cli_interface.html), there are main commands to remember:
 
 ```sh
 # run all the actions of env_list
