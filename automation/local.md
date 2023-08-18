@@ -29,6 +29,15 @@ tox list
 
 ### Configuration
 
+Configuring [Tox](https://tox.wiki/) for your project is easy.
+Simply create a `tox.ini` file at the root of your project and fill it with the following sections:
+
+- [`[tox]`](#tox-1), the general options for [Tox](https://tox.wiki/).
+- [`[testenv]`](#testenv), the default configuration for your actions.
+- [`[textenv:action]`](#testenvaction), the specific actions that will be run.
+
+For more detailed information on configuring Tox, refer to the [Tox user guide](https://tox.wiki/en/latest/user_guide.html).
+
 ```ini
 [tox]
 env_list =
@@ -79,3 +88,31 @@ skip_install = true
 deps = pyclean
 commands = pyclean .
 ```
+
+#### `[tox]`
+
+The `[tox]` section defines general options for [Tox](https://tox.wiki/), mainly configurations regarding the `tox` command:
+
+- `env_list` defines which actions to run by default (when no particular action is specified).
+- `labels` specify which action is linked to which label.
+
+#### `[testenv]`
+
+The `[testenv]` section defines the default configuration for your actions.
+Defining a field in `[testenv:action]` that is already defined in `[testenv]` will overwrite it.
+In our case, we specify two fields:
+
+- `code_locations`, to indicate where our code is stored.
+- `deps`, to specify the dependencies required to run our actions.
+
+#### `[testenv:action]`
+
+The `[testenv:action]` section is where you define the specific actions that will be run by [Tox](https://tox.wiki/).
+Each action has the following options:
+
+- `description`: a brief description of the action that will be displayed when using the `tox list` command.
+- `commands`: the command or commands to run for the action. Commands can be multiline and can include [Tox](https://tox.wiki/) parameters using curly brackets.
+- `skip_install`: a boolean option that indicates whether installing the project is necessary to run the action. For example, the `pyclean` action does not require installation since it only cleans up temporary Python files.
+- `deps`: if the dependencies required for the action are different from those defined in `[testenv]`, you can specify them here.
+
+Defining actions in `[testenv:action]` is the main goal of Tox, allowing you to easily define and run specific tasks for your project.
