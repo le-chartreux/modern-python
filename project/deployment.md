@@ -1,14 +1,12 @@
 # Deployment
 
-Deployment is a crutial part of any project: if installing your tool is complicated, your users will either don't use it or at least have a bad first impression about it.
+Deployment is a crucial aspect of any project, as it determines how easily users can install and use your tool.
+If the installation process is complicated, users may have a bad first impression or may not use it at all.
+There are various approaches to deploying on different platforms, but the ultimate goal is always the same: to make it easy for the end-user to install your product with just one or two commands.
 
-It exists a lot of different approchs to deploy to a lot of different plateforms, so of course this tutorial can't conver them all.
-Howevery, the ultimate goal is always the same: to give to the final user the possibility to install your product easily (and by easily I mean with only one or two commands).
+If your project is open source and you want to deploy it on [PyPI](https://pypi.org/) (the main Python package index), you can refer to the official Python documentation's [packaging projects tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+This tutorial is well-made and maintained, so it's recommended to follow it.
 
-If your project is open source and that you want it to be deployed on [PyPI](https://pypi.org/) (the main Python package index, where you connect when running [pip](https://pip.pypa.io/)), you can check the [packaging projects tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/) on the official Python documentation website.
-This tutorial clearly can't compare to the official documentation, that is really well-made and maintained, so please follow it.
-
-For other case, refer to the package index you are using:
-
-- For self-hosted indexes you can refer to the Python documentation about [hosting your own index](https://packaging.python.org/en/latest/guides/hosting-your-own-index/).
-- For general purpose indexes like [JFrog Artifactory](https://jfrog.com/artifactory/), [Azure Artifact](https://azure.microsoft.com/en-in/products/devops/artifacts) and [Sonatype Nexus](https://www.sonatype.com/products/sonatype-nexus-repository), look at their specific documentation about Python packaging.
+For other cases, you can refer to the package index you're using.
+If you're using a self-hosted index, you can check the Python documentation on [hosting your own index](https://packaging.python.org/en/latest/guides/hosting-your-own-index/).
+For general-purpose indexes like [JFrog Artifactory](https://jfrog.com/artifactory/), [Azure Artifact](https://azure.microsoft.com/en-in/products/devops/artifacts), and [Sonatype Nexus](https://www.sonatype.com/products/sonatype-nexus-repository), look at their specific documentation on Python packaging.
