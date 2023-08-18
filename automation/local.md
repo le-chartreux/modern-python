@@ -115,4 +115,4 @@ Each action has the following options:
 - `skip_install`: a boolean option that indicates whether installing the project is necessary to run the action. For example, the `pyclean` action does not require installation since it only cleans up temporary Python files.
 - `deps`: if the dependencies required for the action are different from those defined in `[testenv]`, you can specify them here.
 
-Defining actions in `[testenv:action]` is the main goal of Tox, allowing you to easily define and run specific tasks for your project.
+Defining actions in `[testenv:action]` is the main goal of [Tox](https://tox.wiki/), allowing you to easily define and run specific tasks for your project.
