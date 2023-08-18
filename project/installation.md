@@ -1,7 +1,6 @@
 # Installation
 
-It's very easy to install a project configured with a `pyproject.toml`: you just have use the following command.
-The project and its dependencies with be installed.
+It's very easy to install a project configured with a `pyproject.toml`: you just have use the following command to install the project and its dependencies.
 
 ```sh
 # standard project
