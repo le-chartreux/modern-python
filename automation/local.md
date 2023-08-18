@@ -9,7 +9,7 @@ In my opinion, the benefits of using a non-standard tool like [Nox](https://nox.
 
 ## Tox
 
-You can see [tox](https://tox.wiki/) as a [make](https://www.gnu.org/software/make/manual/make.html) specialized for Python, that allows you to use virtual environments and run actions across multiple Python versions.
+You can see [Tox](https://tox.wiki/) as a [make](https://www.gnu.org/software/make/manual/make.html) specialized for Python, that allows you to use virtual environments and run actions across multiple Python versions.
 
 ### Usage
 
