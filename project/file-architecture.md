@@ -59,7 +59,7 @@ The public package contains usually one or two files: [`__init__.py`](#__init__p
 ### `__init__.py`
 
  The `__init__.py` imports the elements of `src/_my_package/` that you want to give access to the user.
- This way the user does not have to know the internal architecture of the project, and the developers are free to modify the internal architecture as they want while the API does not changes.
+ This way the user does not have to know the internal architecture of the project, and the developers are free to modify the internal architecture as they want while the API does not change.
 
  ```py
 # using the internal structure
