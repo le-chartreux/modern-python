@@ -112,7 +112,7 @@ Each action has the following options:
 
 - `description`: a brief description of the action that will be displayed when using the `tox list` command.
 - `commands`: the command or commands to run for the action. Commands can be multiline and can include [Tox](https://tox.wiki/) parameters using curly brackets.
-- `skip_install`: a boolean option that indicates whether installing the project is necessary to run the action. For example, the `pyclean` action does not require installation since it only cleans up temporary Python files.
+- `skip_install`: a boolean option that indicates whether installing the project is necessary to run the action. For example, the `pyclean` action does not require installation, since it only cleans up temporary Python files.
 - `deps`: if the dependencies required for the action are different from those defined in `[testenv]`, you can specify them here.
 
 Defining actions in `[testenv:action]` is the main goal of [Tox](https://tox.wiki/), allowing you to easily define and run specific tasks for your project.
