@@ -41,8 +41,6 @@ To install a project in editable mode, you can use the following command:
 pip install --editable .
 ```
 
-This command will install the project in editable mode, allowing you to make modifications to the files and see the changes instantly.
-
 You can also install a project in editable mode with optional dependency groups by using the following command (here with the `--editable` shorten to `-e`):
 
 ```sh
