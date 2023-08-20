@@ -9,7 +9,7 @@ To install a project configured with a `pyproject.toml`, you can use the followi
 pip install .
 ```
 
-This command will install the project and all its dependencies.
+This command will install the project and all its mandatory dependencies.
 It's that simple!
 
 ## Optional Dependencies
