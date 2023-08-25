@@ -54,7 +54,10 @@ labels =
 
 [testenv]
 code_locations = src tests
-deps = .[dev]
+# the project is installed in editable mode to get way faster tox runs
+deps = --editable .[dev]
+# because the project already installed in deps no need to reinstall it
+skip_install = true
 
 [testenv:pytest]
 description = Run unit tests
@@ -62,7 +65,6 @@ commands = pytest tests/
 
 [testenv:ruff]
 description = Ensure PEP-8 compliance
-skip_install = true
 deps = ruff
 commands = ruff {[testenv]code_locations}
 
@@ -72,19 +74,16 @@ commands = mypy {[testenv]code_locations}
 
 [testenv:black]
 description = Format code
-skip_install = true
 deps = black
 commands = black {[testenv]code_locations}
 
 [testenv:isort]
 description = Format import order on code
-skip_install = true
 deps = isort
 commands = isort {[testenv]code_locations}
 
 [testenv:pyclean]
 description = Clean up bytecode and build artifacts
-skip_install = true
 deps = pyclean
 commands = pyclean .
 ```
