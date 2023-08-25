@@ -61,7 +61,7 @@ skip_install = true
 
 [testenv:pytest]
 description = Run unit tests
-commands = pytest tests/
+commands = pytest tests/ --cov
 
 [testenv:ruff]
 description = Ensure PEP-8 compliance
