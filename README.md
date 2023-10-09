@@ -1,4 +1,4 @@
-# Good Python
+# Modern Python
 
 [Modern Python](https://github.com/le-chartreux/modern-python/) is a small tutorial that covers key aspects of writing high-quality modern Python programs and the tools available to ensure their quality.
 While it does not delve into [programming principles that apply to every modern language](https://en.wikipedia.org/wiki/Category:Programming_principles), it focuses on Python-specific rules.
