@@ -3,6 +3,11 @@
 - [Chapter 1 - Setup of the Project](#chapter-1---setup-of-the-project)
   - [Language Agnostic](#language-agnostic)
   - [Language Specific](#language-specific)
+  - [File architecture](#file-architecture)
+  - [Private package](#private-package)
+    - [Public package](#public-package)
+      - [`__init__.py`](#__init__py)
+    - [`__main__.py`](#__main__py)
 
 ## Language Agnostic
 
@@ -41,3 +46,139 @@ sters
 ## Language Specific
 
 Now, let's dig onto the Python-specific configuration.
+
+## File architecture
+
+First of all, we will setup the file architecture of our project.
+
+An intuitive file architecture is crucial for any project.
+It enables developers to quickly find what they are looking for and saves time that would otherwise be wasted on figuring out where to create a new file.
+
+Many popular Python projects, such as [pytest](https://github.com/pytest-dev/pytest) and [matplotlib](https://github.com/matplotlib/matplotlib), use the src layout
+However, other projects like [Django](https://github.com/django/django) and [numpy](https://github.com/numpy/numpy/tree/main) use the flat layout.
+Ultimately, the choice between the two layouts depends on personal preference.
+You can find a PyPA article highlighting the key differences between the two layouts [here](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/).
+
+We will use the `src` layout because it allows for a cleaner declaration of private packages.
+
+In this architecture, sources are in a dedicated `src` folder (as expected from the *src* layout).
+
+```sh
+mkdir src
+```
+
+The `src` folder contains multiple packages, including the [public package](#public-package) (`sters`), the [private package](#private-package) (`_sters`), and possibly others depending on the needs of the project (e.g. REST API, demonstration, etc.).
+Because we are making a simple CLI app, we will only create the public and the private package.
+
+## Private package
+
+The private package (`_sters`) will contain the code of the project.
+
+```sh
+mkdir src/_sters
+```
+
+For now, just create an `__init__.py` file.
+
+```sh
+touch src/_sters/__init__.py
+```
+
+Then fill the `__init__.py` file with the following code.
+This code will not last long, it is only used to test the configuration.
+
+```py
+"""Private package of sters."""
+```
+
+To test the configuration, create an additional file `create_welcome_message.py`:
+
+```sh
+touch src/_sters/create_welcome_message.py
+```
+
+Then fill it with the following code:
+
+```py
+def create_welcome_message(name: str) -> str:
+    """Given a name, welcome it by prepending 'welcome to sters' postponing '!'."""
+    return f"welcome to sters {name}!"
+```
+
+### Public package
+
+The public package (`sters`) is an interface that contains almost no code.
+It is used to provide a clear and controlled API to the user, and may also declare the main function if the package is executable.
+The public package contains usually one or two files: [`__init__.py`](#__init__py) and [`__main__.py`](#__main__py).
+
+```sh
+mkdir src/sters
+```
+
+#### `__init__.py`
+
+Like every Python package, your public package needs an `__init__.py`.
+
+```sh
+touch src/sters/__init__.py
+```
+
+The `__init__.py` imports the elements of `src/_sters/` that you want to give access to the user.
+This way the user does not have to know the internal architecture of the project, and the developers are free to modify the internal architecture as they want while the API does not change.
+You can find bellow an example of the two ways to import from an external code.
+
+ ```py
+# using the internal structure
+from _sters.create_welcome_message import create_welcome_message
+# -> need to know the internal strucutre of the package
+# -> impacted by changes on the internal structure
+
+# using the elements imported in the __init__.py 
+from sters import create_welcome_message
+# -> easy
+# -> not impacted by changes on the internal structure
+```
+
+To give external access to the internal code from the `__init__.py` file, simply import the content you want.
+Because for the demonstration we want to be able to use the `create_welcome_message` function, fill your `__init__.py` like the following:
+
+```py
+"""Private interface of sters."""
+
+from _sters.create_welcome_message import create_welcome_message
+```
+
+It is considered a good practice to add an `__all__` statement on your package to explicitly indicate which elements you want to export, so add the following line at the end of your `__init__.py`:
+
+```py
+__all__ = ["create_welcome_message"]
+```
+
+### `__main__.py`
+
+If the package is executable, the `__main__.py` defines a main function that parses args and uses some elements imported by the `__init__.py`.
+Because `sters` is executable, create a `__main__.py`:
+
+```sh
+touch src/sters/__main__.py
+```
+
+Inside `__main__.py`, use the public interface to import the `create_welcome_message` function and use it.
+
+```py
+"""Executable of sters."""
+
+from sters import create_welcome_message
+
+
+def main() -> None:
+    """Welcome USER."""
+    welcome_message = create_welcome_message("USER")
+    print(welcome_message)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Congrats, you now have a `src` file architecture!
