@@ -4,7 +4,7 @@
   - [Language Agnostic](#language-agnostic)
   - [Language Specific](#language-specific)
   - [File architecture](#file-architecture)
-  - [Private package](#private-package)
+    - [Private package](#private-package)
     - [Public package](#public-package)
       - [`__init__.py`](#__init__py)
       - [`__main__.py`](#__main__py)
@@ -70,7 +70,7 @@ mkdir src
 The `src` folder contains multiple packages, including the [public package](#public-package) (`sters`), the [private package](#private-package) (`_sters`), and possibly others depending on the needs of the project (e.g. REST API, demonstration, etc.).
 Because we are making a simple CLI app, we will only create the public and the private package.
 
-## Private package
+### Private package
 
 The private package (`_sters`) will contain the code of the project.
 
