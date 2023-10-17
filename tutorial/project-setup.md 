@@ -7,7 +7,7 @@
   - [Private package](#private-package)
     - [Public package](#public-package)
       - [`__init__.py`](#__init__py)
-    - [`__main__.py`](#__main__py)
+      - [`__main__.py`](#__main__py)
 
 ## Language Agnostic
 
@@ -166,7 +166,7 @@ It is considered a good practice to add an `__all__` statement on your package t
 __all__ = ["create_welcome_message"]
 ```
 
-### `__main__.py`
+#### `__main__.py`
 
 If the package is executable, the `__main__.py` defines a main function that parses args and uses some elements imported by the `__init__.py`.
 Because `sters` is executable, create a `__main__.py`:
