@@ -78,7 +78,7 @@ The private package (`_sters`) will contain the code of the project.
 mkdir src/_sters
 ```
 
-For now, just create an `__init__.py` file.
+Because it is a package, create an `__init__.py` file.
 
 ```sh
 touch src/_sters/__init__.py
