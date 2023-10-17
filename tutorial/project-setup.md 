@@ -105,6 +105,18 @@ def create_welcome_message(name: str) -> str:
     return f"welcome to sters {name}!"
 ```
 
+At this point, you should have the following code architecture:
+
+```tree
+sters
+├── LICENSE
+├── README.md
+└── src
+    └── _sters
+        ├── create_welcome_message.py
+        └── __init__.py
+```
+
 ### Public package
 
 The public package (`sters`) is an interface that contains almost no code.
