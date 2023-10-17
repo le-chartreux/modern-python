@@ -2,7 +2,6 @@
 
 - [Project Setup](#project-setup)
   - [Language Agnostic](#language-agnostic)
-  - [Language Specific](#language-specific)
   - [File architecture](#file-architecture)
     - [Private package](#private-package)
     - [Public package](#public-package)
@@ -42,8 +41,6 @@ sters
 ├── LICENSE
 └── README.md
 ```
-
-## Language Specific
 
 Now, let's dig onto the Python-specific configuration.
 
