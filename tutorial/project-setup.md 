@@ -194,3 +194,17 @@ if __name__ == "__main__":
 ```
 
 Congrats, you now have a `src` file architecture!
+At this point, your file architecture should be the following:
+
+```tree
+.
+├── LICENSE
+├── README.md
+└── src
+    ├── _sters
+    │   ├── create_welcome_message.py
+    │   └── __init__.py
+    └── sters
+        ├── __init__.py
+        └── __main__.py
+```
