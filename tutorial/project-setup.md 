@@ -152,7 +152,7 @@ from sters import create_welcome_message
 ```
 
 To give external access to the internal code from the `__init__.py` file, simply import the content you want.
-Because for the demonstration we want to be able to use the `create_welcome_message` function, fill your `__init__.py` like the following:
+Because to test our configuration we want to be able to use the `create_welcome_message` function, fill your `__init__.py` like the following:
 
 ```py
 """Private interface of sters."""
