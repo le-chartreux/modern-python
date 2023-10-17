@@ -175,7 +175,7 @@ Because `sters` is executable, create a `__main__.py`:
 touch src/sters/__main__.py
 ```
 
-Inside `__main__.py`, use the public interface to import the `create_welcome_message` function and use it.
+Inside `__main__.py`, use the **public** interface to import the `create_welcome_message` function and use it.
 
 ```py
 """Executable of sters."""
