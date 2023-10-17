@@ -91,7 +91,7 @@ Then fill the `__init__.py` file with the following code.
 ```
 
 To test the configuration, create an additional file `create_welcome_message.py`.
-This part will not last long, it is only used to test the configuration.
+This file will not last long, it is only used to test the configuration.
 
 ```sh
 touch src/_sters/create_welcome_message.py
