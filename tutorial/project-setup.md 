@@ -155,7 +155,7 @@ To give external access to the internal code from the `__init__.py` file, simply
 Because to test our configuration we want to be able to use the `create_welcome_message` function, fill your `__init__.py` like the following:
 
 ```py
-"""Private interface of sters."""
+"""Public interface of sters."""
 
 from _sters.create_welcome_message import create_welcome_message
 ```
