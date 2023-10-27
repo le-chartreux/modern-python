@@ -6,4 +6,4 @@ To do so, you will realize, step by step, a tiny software named *cleather*: a mi
 The goal of *cleather* is to provide a terminal application that allows to get the weather of any place, using the [OpenWeatherMap API](https://openweathermap.org/api).
 Although it's a small, simple application, developing *cleather* will enable you to grasp the main aspects of modern development in Python: project management (from configuration to deployment on [PyPI](https://pypi.org/)), code quality (from testing to documentation, including linting, formatting and type checking) and finally, automating actions (both locally and in CI/CD).
 
-To get started, refer to the [Chapter 1 - Project](project/README.md).
+To get started, refer to the [Chapter 1 - Project Initialization](project-initialization/README.md).
