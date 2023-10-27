@@ -28,7 +28,7 @@ git init
 
 Then you will need to create three files:
 
-- `README.md`, a description of your project and the ways to install it to your users. For now, leave it blank.
+- `README.md`, a description of your project and the ways to install it to your users.
 - `.gitignore`, the list of filesystem elements that Git will ignore. You can use [this one](https://github.com/github/gitignore/blob/main/Python.gitignore).
 - `LICENSE`, to protect your work. Refer to [choosealicense](https://choosealicense.com/) to find the one that suits you. I will go for the [MIT License](https://mit-license.org/).
 
@@ -40,6 +40,17 @@ cleather
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
+
+For now, let's provide a very minimalist description in our README.md:
+
+```markdown
+# cleather
+
+Terminal application that allows to get the weather of any place, using the [OpenWeatherMap API](https://openweathermap.org/api).
+
+Currently in development and unusable.
+Come back later!
 ```
 
 ## Language Specific
