@@ -1,8 +1,8 @@
-# Project Setup
+# File Architecture
 
-- [Project Setup](#project-setup)
+- [File Architecture](#file-architecture)
   - [Language Agnostic](#language-agnostic)
-  - [File architecture](#file-architecture)
+  - [Language Specific](#language-specific)
     - [Private package](#private-package)
     - [Public package](#public-package)
       - [`__init__.py`](#__init__py)
@@ -42,9 +42,9 @@ sters
 └── README.md
 ```
 
-Now, let's dig onto the Python-specific configuration.
+## Language Specific
 
-## File architecture
+Now, let's dig onto the Python-specific configuration.
 
 First of all, we will setup the file architecture of our project.
 
