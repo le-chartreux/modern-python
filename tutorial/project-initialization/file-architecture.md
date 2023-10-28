@@ -10,17 +10,18 @@
 
 ## Language Agnostic
 
-This part highlight setup that you will do on any project with any language.
+This section outlines the initial setup steps that are common to any project, regardless of the programming language you choose.
 
-First of all, create the directory for your project - our will be `cleather`.
+Start by creating a dedicated directory for your project.
+In our case, we'll name it cleather.
 
 ```sh
 mkdir cleather
 cd cleather
 ```
 
-Then initialize [Git](https://git-scm.com/) to get some version control.
-This is not required, but I strongly recommand to use a version control system.
+While not mandatory, it's highly recommended to use a version control system for tracking changes in your project.
+We'll initialize [Git](https://git-scm.com/) to manage version control.
 
 ```sh
 git init
@@ -28,11 +29,11 @@ git init
 
 Then you will need to create three files:
 
-- `README.md`, a description of your project and the ways to install it.
-- `.gitignore`, the list of filesystem elements that Git will ignore. You can use [this one](https://github.com/github/gitignore/blob/main/Python.gitignore).
-- `LICENSE`, to protect your work. Refer to [choosealicense](https://choosealicense.com/) to find the one that suits you. I will go for the [MIT License](https://mit-license.org/).
+- `README.md`, to describe your project and provide the instructions on how to install and use it.
+- `.gitignore`, tp specify which parts of your project's file system should be ignored by Git. You can use a predefined one, such as [this one](https://github.com/github/gitignore/blob/main/Python.gitignore) for Python.
+- `LICENSE`, to protect your work with an open-source license. Visit [choosealicense](https://choosealicense.com/) to find the one that aligns with your project's goals. In this tutorial, we'll opt for the [MIT License](https://mit-license.org/).
 
-Now your file structure should be the following:
+Once you've completed these steps, your project's file structure should be the following:
 
 ```tree
 cleather
@@ -53,7 +54,6 @@ Cleather is a Python terminal application designed to provide weather informatio
 We appreciate your interest and invite you to check back later for updates.
 
 This project was created following the [Modern Python Tutorial](https://github.com/le-chartreux/modern-python/tree/with-tutorial/tutorial) by [le-chartreux](https://github.com/le-chartreux).
-
 ```
 
 ## Language Specific
