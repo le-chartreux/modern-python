@@ -1,4 +1,5 @@
 # Project Initialization
 
-This chapter will achive the basic setup of the project: firstly the [file architecture](file-architecture.md), then the [pyproject.toml](pyproject.md).
-At the end of it, you will have a project ready to code into.
+In this pivotal chapter, we will lay the foundation for our project by achieving two essential steps: establishing the project's [file architecture](file-architecture.md) and configuring the [pyproject.toml](pyproject.md) file.
+
+By the conclusion of this chapter, you will have a fully prepared project environment, poised for the coding journey ahead.
