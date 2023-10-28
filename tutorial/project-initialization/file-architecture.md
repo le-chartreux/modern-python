@@ -49,7 +49,7 @@ For now, let's provide a very minimalist description in our README.md:
 
 Terminal application that allows to get the weather of any place, using the [OpenWeatherMap API](https://openweathermap.org/api).
 
-Currently in development and unusable.
+Currently, in development and unusable.
 Come back later!
 ```
 
