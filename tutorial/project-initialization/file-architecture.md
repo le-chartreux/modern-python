@@ -28,7 +28,7 @@ git init
 
 Then you will need to create three files:
 
-- `README.md`, a description of your project and the ways to install it to your users.
+- `README.md`, a description of your project and the ways to install it.
 - `.gitignore`, the list of filesystem elements that Git will ignore. You can use [this one](https://github.com/github/gitignore/blob/main/Python.gitignore).
 - `LICENSE`, to protect your work. Refer to [choosealicense](https://choosealicense.com/) to find the one that suits you. I will go for the [MIT License](https://mit-license.org/).
 
