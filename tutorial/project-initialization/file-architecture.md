@@ -47,10 +47,13 @@ For now, let's provide a very minimalist description in our README.md:
 ```markdown
 # cleather
 
-Terminal application that allows to get the weather of any place, using the [OpenWeatherMap API](https://openweathermap.org/api).
+Cleather is a Python terminal application designed to provide weather information for any location using the [OpenWeatherMap API](https://openweathermap.org/api).
 
-Currently, in development and unusable.
-Come back later!
+**Please Note:** Cleather is currently under development and not yet functional.
+We appreciate your interest and invite you to check back later for updates.
+
+This project was created following the [Modern Python Tutorial](https://github.com/le-chartreux/modern-python/tree/with-tutorial/tutorial) by [le-chartreux](https://github.com/le-chartreux).
+
 ```
 
 ## Language Specific
