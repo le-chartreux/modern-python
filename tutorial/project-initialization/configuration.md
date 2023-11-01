@@ -90,3 +90,6 @@ cleather = "cleather.__main__:main"
 requires = ["setuptools>=45"]
 build-backend = "setuptools.build_meta"
 ```
+
+Because your project is correctly configured, you can now [install](installation.md) it!
+Refer to the [installation](installation.md) section to learn how to!
