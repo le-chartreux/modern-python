@@ -13,7 +13,7 @@
 This section outlines the initial setup steps that are common to any project, regardless of the programming language you choose.
 
 Start by creating a dedicated directory for your project.
-In our case, we'll name it cleather.
+In our case, we'll name it `cleather`.
 
 ```sh
 mkdir cleather
@@ -58,19 +58,14 @@ This project was created following the [Modern Python Tutorial](https://github.c
 
 ## Language Specific
 
-Now, let's dig onto the Python-specific configuration.
+Now, let's dive into the Python-specific configuration for our project.
 
-First of all, we will setup the file architecture of our project.
+Many popular Python projects, such as [pytest](https://github.com/pytest-dev/pytest) and [matplotlib](https://github.com/matplotlib/matplotlib), use the *src* layout.
+However, other projects like [Django](https://github.com/django/django) and [numpy](https://github.com/numpy/numpy/tree/main) use the *flat* layout.
+The choice between these layouts often comes down to personal preference.
+For an in-depth comparison of the two, you can refer to the PyPA article [here](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/).
 
-An intuitive file architecture is crucial for any project.
-It enables developers to quickly find what they are looking for and saves time that would otherwise be wasted on figuring out where to create a new file.
-
-Many popular Python projects, such as [pytest](https://github.com/pytest-dev/pytest) and [matplotlib](https://github.com/matplotlib/matplotlib), use the src layout.
-However, other projects like [Django](https://github.com/django/django) and [numpy](https://github.com/numpy/numpy/tree/main) use the flat layout.
-Ultimately, the choice between the two layouts depends on personal preference.
-You can find a PyPA article highlighting the key differences between the two layouts [here](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/).
-
-We will use the `src` layout because it allows for a cleaner declaration of private packages.
+In our case, we will use the src layout because it allows for a cleaner organization of private packages.
 
 In this architecture, sources are in a dedicated `src` folder (as expected from the *src* layout).
 
@@ -78,45 +73,45 @@ In this architecture, sources are in a dedicated `src` folder (as expected from 
 mkdir src
 ```
 
-The `src` folder contains multiple packages, including the [public package](#public-package) (`cleather`), the [private package](#private-package) (`_cleather`), and possibly others depending on the needs of the project (e.g. REST API, demonstration, etc.).
-Because we are making a simple CLI app, we will only create the public and the private package.
+Within the `src` folder, you can have multiple packages, including the public package (`cleather`), the private package (`_cleather`), and any others as needed for your project (e.g. CLI, GUI, REST API, demonstration, etc.).
+Since we are developing a simple CLI app, we will only create the public and the private package.
 
 ### Private package
 
-The private package (`_cleather`) will contain the code of the project.
+The private package (_cleather) will house the core code of the project.
 
 ```sh
 mkdir src/_cleather
 ```
 
-Because it is a package, create an `__init__.py` file.
+As it's a package, create an `__init__.py` file to indicate that it's a package.
 
 ```sh
 touch src/_cleather/__init__.py
 ```
 
-Then fill the `__init__.py` file with the following code.
+Now, fill the `__init__.py` file with the following code:
 
 ```py
 """Private package of cleather."""
 ```
 
-To test the configuration, create an additional file `create_welcome_message.py`.
-This file will not last long, it is only used to test the configuration.
+To test the configuration, create an additional file named `create_welcome_message.py`.
+This file is temporary and is used to verify the configuration.
 
 ```sh
 touch src/_cleather/create_welcome_message.py
 ```
 
-Then fill it with the following code:
+Add the following code to create_welcome_message.py:
 
 ```py
 def create_welcome_message(name: str) -> str:
-    """Given a name, welcome it by prepending 'welcome to cleather' postponing '!'."""
-    return f"welcome to cleather {name}!"
+    """Welcome the name by prepending 'Welcome to cleather' and appending '!'."""
+    return f"Welcome to cleather {name}!"
 ```
 
-At this point, you should have the following code architecture:
+With these steps, your project's code architecture should now resemble the following:
 
 ```tree
 cleather
@@ -131,8 +126,10 @@ cleather
 ### Public package
 
 The public package (`cleather`) is an interface that contains almost no code.
-It is used to provide a clear and controlled API to the user, and may also declare the main function if the package is executable.
-The public package contains usually one or two files: [`__init__.py`](#__init__py) and [`__main__.py`](#__main__py).
+It is used to offer users a clear and controlled API, and may also declare the main function if the package is executable with only one type of entry point (e.g. only CLI or only GUI).
+Typically, the public package consists of one or two files: `__init__.py` and `__main__.py`.
+
+To establish the `cleather` package, create a new directory within the `src` folder:
 
 ```sh
 mkdir src/cleather
@@ -140,30 +137,30 @@ mkdir src/cleather
 
 #### `__init__.py`
 
-Like every Python package, your public package needs an `__init__.py`.
+Just like any other Python package, the cleather package requires an `__init__.py` file:
 
 ```sh
 touch src/cleather/__init__.py
 ```
 
-The `__init__.py` imports the elements of `src/_cleather/` that you want to give access to the user.
-This way the user does not have to know the internal architecture of the project, and the developers are free to modify the internal architecture as they want while the API does not change.
-You can find bellow an example of the two ways to import from an external code.
+The `__init__.py` file is responsible for importing specific elements from the `src/_cleather/` package that you want to expose to users.
+This design allows users to interact with the API without needing to understand the internal project structure, and developers to freely modify the project's internal architecture without affecting the API.
+Below is an example illustrating two ways to import from external code:
 
  ```py
-# using the internal structure
+# Using the internal structure
 from _cleather.create_welcome_message import create_welcome_message
-# -> need to know the internal strucutre of the package
-# -> impacted by changes on the internal structure
+# -> Requires knowledge of the internal structure
+# -> Affected by changes in the internal structure
 
-# using the elements imported in the __init__.py 
+# Using elements imported in the __init__.py 
 from cleather import create_welcome_message
-# -> easy
-# -> not impacted by changes on the internal structure
+# -> Easier for users
+# -> Not impacted by changes in the internal structure
 ```
 
-To give external access to the internal code from the `__init__.py` file, simply import the content you want.
-Because to test our configuration we want to be able to use the `create_welcome_message` function, fill your `__init__.py` like the following:
+To grant external access to the internal code from the `__init__.py` file, simply import the content you wish to expose.
+To test our configuration, fill your `__init__.py` as follows, so the `create_welcome_message` will be exposed:
 
 ```py
 """Public interface of cleather."""
@@ -171,7 +168,8 @@ Because to test our configuration we want to be able to use the `create_welcome_
 from _cleather.create_welcome_message import create_welcome_message
 ```
 
-It is considered a good practice to add an `__all__` statement on your package to explicitly indicate which elements you want to export, so add the following line at the end of your `__init__.py`:
+It's considered a good practice to add an `__all__` statement in your package to explicitly indicate which elements you intend to export.
+Add the following line at the end of your `__init__.py`:
 
 ```py
 __all__ = ["create_welcome_message"]
@@ -179,14 +177,14 @@ __all__ = ["create_welcome_message"]
 
 #### `__main__.py`
 
-If the package is executable, the `__main__.py` defines a main function that parses args and uses some elements imported by the `__init__.py`.
-Because `cleather` is executable, create a `__main__.py`:
+If the package is executable, the `__main__.py` defines a main function that parses arguments and utilizes some elements exposed by the `__init__.py`.
+As cleather is executable, create a `__main__.py`:
 
 ```sh
 touch src/cleather/__main__.py
 ```
 
-Inside `__main__.py`, use the **public** interface to import the `create_welcome_message` function and use it.
+Inside `__main__.py`, utilize the public interface to import the `create_welcome_message` function and utilize it in your application:
 
 ```py
 """Executable of cleather."""
@@ -204,8 +202,9 @@ if __name__ == "__main__":
     main()
 ```
 
-Congrats, you now have a `src` file architecture!
-At this point, your file architecture should be the following:
+Congratulations!
+You have now established a well-organized `src` file architecture.
+At this point, your file structure should resemble the following:
 
 ```tree
 .
@@ -219,3 +218,5 @@ At this point, your file architecture should be the following:
         ├── __init__.py
         └── __main__.py
 ```
+
+You are now ready to proceed to the next section, which covers the configuration of your project in the [pyproject.toml](pyproject.md) file.
