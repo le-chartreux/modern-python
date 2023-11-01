@@ -221,4 +221,4 @@ At this point, your file structure should resemble the following:
         └── __main__.py
 ```
 
-You are now ready to proceed to the next section, which covers the configuration of your project in the [pyproject.toml](pyproject.md) file.
+You are now ready to proceed to the next section, which covers the [configuration of your project](configuration.md).
