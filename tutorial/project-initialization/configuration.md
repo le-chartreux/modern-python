@@ -94,5 +94,5 @@ requires = ["setuptools>=45"]
 build-backend = "setuptools.build_meta"
 ```
 
-Now that your project is correctly configured, you can proceed to install it.
-Refer to the [installation](installation.md) section for guidance on how to do that!
+Now that your project is correctly configured, you're almost ready to proceed with the installation.
+However, before that, you need to [create a virtual environment](virtual-environment.md)!
