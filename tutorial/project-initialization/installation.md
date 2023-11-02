@@ -1,37 +1,38 @@
 # Installation
 
-Installing a Python project and its dependencies can be a tedious task, especially when dealing with multiple dependency groups.
-However, with the `pyproject.toml` configuration file, installation can be simplified and streamlined.
+Installing a Python project along with its dependencies can be a tedious task, especially when dealing with multiple dependency groups.
+Thankfully, a `pyproject.toml` configuration file allows installation to be simplified and streamlined.
 
 ## Create the virtual environment
 
-It's not a good practice to install your Python packages system-wide, because it messes up your system, creates security risks and will certenly end up with dependencies conflicts.
-Starting from Python 3.11, you will even get an error if you try to do that (`error: externally-managed-environment` from [PEP 668](https://peps.python.org/pep-0668/)).
-The solution is to use a *virtual environment*, that is a self-contained and isolated workspace where you can install packages and manage dependencies separately from the system-wide Python installation.
-You should use one virtual environment per project to avoid dependencies conflicts.
-Let's create the one for `cleather` with [venv](https://docs.python.org/3/library/venv.html), the default creator of virtual environments of Python:
+It's not a good practice to install your Python packages system-wide, as this can lead to system clutter, security vulnerabilities, and inevitable dependency conflicts.
+Starting from Python 3.11, attempting to do so will result to an error (`error: externally-managed-environment`, as per [PEP 668](https://peps.python.org/pep-0668/)).
+The solution is to utilize a *virtual environment*, which provides a self-contained and isolated workspace where packages can be installed and dependencies managed separately from the system-wide Python installation.
+
+Let's create a virtual environment for cleather using [venv](https://docs.python.org/3/library/venv.html), Python's default virtual environment creator:
 
 ```sh
 python3 -m venv .venv
 ```
 
-With this command, the created environment will be named `.venv`, as recommanded in [this part](https://docs.python.org/3/tutorial/venv.html?highlight=prevents+clashing#creating-virtual-environments) of the official Python tutorial.
+The command above creates an environment named `.venv`, following the recommendation in the [official Python tutorial](https://docs.python.org/3/tutorial/venv.html?highlight=prevents+clashing#creating-virtual-environments).
 
-Next, activate it:
+Next, activate the environment with the command bellow.
+Remember to **always activate the virtual environment when following this tutorial**.
 
 ```sh
 source .venv/bin/activate
 ```
 
-You can verify that your virutal environment is correctly set using the following command:
+You can verify that your virtual environment is correctly set by running the following command:
 
 ```sh
 which python3
 ```
 
-That should output something ending by `/cleather/.venv/bin/python3`.
+This command should output a path ending with `/cleather/.venv/bin/python3`.
 
-If you want exit the `venv`, you can run the following command:
+To exit the virtual environment, use the following command.
 
 ```sh
 deactivate
@@ -39,21 +40,21 @@ deactivate
 
 ## Install the package
 
-To install a project configured with a `pyproject.toml`, you can use the following command, that also installs its mandatory dependencies:
+To install a project configured with a `pyproject.toml` (along with its mandatory dependencies), use the following command:
 
 ```sh
 pip install .
 ```
 
-You should now be able to run the `cleather` command!
+With this installation complete, you should now be able to run the `cleather` command:
 
 ```sh
 $ cleather
 Welcome to cleather USER!
 ```
 
-Now let's try to improve this test program but putting the name of the user logged instead of `USER`.
-In `__main__.py`, import the `os` module and use `os.getlogin`:
+Let's make a quick improvement by replacing `USER` with the logged-in user's name.
+In the `__main__.py` file, import the `os` module and use `os.getlogin` as follows:
 
 ```python
 """Executable of cleather."""
@@ -76,19 +77,19 @@ $ cleather
 Welcome to cleather USER!
 ```
 
-Sadly, the output hasn't changed!
-It's because just before our installation was *static*.
-If you install the package again, the output will be updated.
-Howevery, it's not convenient to run a `pip` command after each modification when developing a project.
-Fortunately, pip provides an editable mode, also known as development mode, that allows you to get modifications of your files instantly available.
+Unfortunately, the output hasn't changed!
+This is because our initial installation was *static*.
+If you were to install the package again, the output would reflect your code changes.
+However, it's not convenient to run a `pip` command after every modification during project development.
+Fortunately, pip provides an editable mode, also known as development mode, which enables you to see your file modifications instantly.
 
-To install the project in editable mode, you can use the following command:
+To install the project in editable mode, execute the following command:
 
 ```sh
 pip install --editable .
 ```
 
-Now, running the `cleather` command should output your username:
+Now, running the `cleather` command should display your username:
 
 ```sh
 $ cleather                
