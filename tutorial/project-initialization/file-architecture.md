@@ -198,11 +198,10 @@ def main() -> None:
     """Welcome USER."""
     welcome_message = create_welcome_message("USER")
     print(welcome_message)
-
-
-if __name__ == "__main__":
-    main()
 ```
+
+You might have observed that the typical `if __name__ == "__main__": main()` construct is not employed at the end of this file.
+The reason for this is that in the next section, we will create a script that directly invokes the `main` function!
 
 Congratulations!
 You have now established a well-organized `src` file architecture.
