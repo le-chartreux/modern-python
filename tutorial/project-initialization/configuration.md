@@ -76,6 +76,7 @@ Remember to replace my information with your own:
 ```toml
 [project]
 name = "cleather"
+version = "0.0.1"
 description = "Terminal application designed to provide weather information for any location using the OpenWeatherMap API."
 keywords = ["cli", "weather", "openweathermap", "api"]
 requires-python = ">=3.10"
