@@ -1,8 +1,8 @@
 # Configuration
 
 The configuration of a Python project is crucial for ensuring that installation, development, and deployment are simple for contributors.
-In 2016, [PEP 518](https://peps.python.org/pep-0518/) was introduced, which specified that the configuration of Python projects should be contained in a unified file named `pyproject.toml`.
-This section explains how to set up a project with a `pyproject.toml` file.
+In 2016, [PEP 518](https://peps.python.org/pep-0518/) was introduced, specifying that the configuration of Python projects should be contained in a unified file named `pyproject.toml`.
+This section will guide you throught setting up a project with a `pyproject.toml` file.
 
 First of all, create a `pyproject.toml` file at the root of your project:
 
@@ -10,22 +10,22 @@ First of all, create a `pyproject.toml` file at the root of your project:
 touch pyproject.toml
 ```
 
-A `pyproject.toml` can be huge, but we will start gentle with a minimalist configuration.
-When we will need new features in the following of the tutorial, we will go back to this file and create the required fields.
+The `pyproject.toml` file can become quite extensive, but we'll start with a minimalist configuration.
+As we progress through the tutorial and require additional features, we will revisit this file to add the necessary fields.
 
 ## Project
 
-For now, almost everything we need will be on the `project` section.
-It provides metadata about the project, that is used by different tools like PyPI.
+For now, most of what we need can be configured under the project section.
+This section provides metadata about the project, which is utilized by various tools like PyPI.
 
-Let's start by creating the `project` section:
+Let's start by creating the project section:
 
 ```toml
 [project]
 ```
 
-Then, under the section, add some information about the project and its authors.
-Don't forget to modify the authors so it matches your identity:
+Now, add some essential information about the project and its authors.
+Be sure to update the authors' details to reflect your own identity:
 
 ```toml
 name = "cleather"
@@ -35,9 +35,9 @@ requires-python = ">=3.10"
 authors = [{name = "FIRSTNAME LASTNAME", email = "XXX@XXX.XXX"},]
 ```
 
-Now, let's add a subsection for the homepage of your project and its bug tracker.
-These URLs will be put on the PyPI page of your project, so it's important to specify them.
-If you don't use [GitHub](https://github.com/) (or any other similar tool), don't put this section.
+Next, add a subsection for the project's homepage and its bug tracker.
+These URLs will be displayed on the PyPI page of your project, so it's important to provide them.
+If you are not using [GitHub](https://github.com/) (or a similar platform), you can omit this section.
 
 ```toml
 [project.urls]
@@ -45,9 +45,9 @@ If you don't use [GitHub](https://github.com/) (or any other similar tool), don'
 "Bug Tracker" = "https://github.com/YOUR_USERNAME/YOUR_PROJECT/issues"
 ```
 
-For now, the most interesting part of the `pyproject.toml` is the `script` section.
-As its name suggest, it's where you will define the entry points of your application, and so the commands the user will be able to run.
-To allow your user to run the `cleather` command, add the following to your `pyproject.toml`.
+The most interesting part of the `pyproject.toml` at this stage is the `script` subsection.
+As the name suggests, this is where you define the entry points for your application, which are the commands users will run.
+To allow users to run the `cleather` command, add the following to your `pyproject.toml`:
 
 ```toml
 [project.scripts]
@@ -56,8 +56,8 @@ cleather = "cleather.__main__:main"
 
 ## Build-system
 
-The `[build-system]` section is where you can configure your build system (obviously).
-I use [setuptool](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) as it's the most commonly used, but you can use another build system and configure it in this section.
+The `build-system` section is used to configure how your project will be packaged.
+I commonly use [setuptool](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html) as it's widely adopted, but you can use a different build system and configure it within this section.
 
 Add the following section to your `pyproject.toml`:
 
@@ -69,7 +69,8 @@ build-backend = "setuptools.build_meta"
 
 ## Recap
 
-At the end of this section, your `pyproject.toml` should look like the following, except that you filled your personnal information instead of mines:
+At the end of this section, your `pyproject.toml` should resemble the following example.
+Remember to replace my information with your own:
 
 ```toml
 [project]
@@ -91,5 +92,5 @@ requires = ["setuptools>=45"]
 build-backend = "setuptools.build_meta"
 ```
 
-Because your project is correctly configured, you can now [install](installation.md) it!
-Refer to the [installation](installation.md) section to learn how to!
+Now that your project is correctly configured, you can proceed to install it.
+Refer to the [installation](installation.md) section for guidance on how to do that!
