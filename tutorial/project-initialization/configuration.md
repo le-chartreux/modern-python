@@ -46,8 +46,9 @@ If you are not using [GitHub](https://github.com/) (or a similar platform), you 
 ```
 
 The most interesting part of the `pyproject.toml` at this stage is the `script` subsection.
-As the name suggests, this is where you define the entry points for your application, which are the commands users will run.
-To allow users to run the `cleather` command, add the following to your `pyproject.toml`:
+As the name suggests, this is where you define the entry points for your application, which are the commands users will be able to execute from their terminal.
+In our case, we want the `cleather` command to invoke the `main` function located in the `__main__` file of the `cleather` package.
+To achieve this, add the following configuration to your `pyproject.toml`:
 
 ```toml
 [project.scripts]
