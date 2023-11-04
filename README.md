@@ -11,7 +11,7 @@ Software development work is constantly evolving.
 The days when a software was created, tested, put into production and never changed are long gone (if they ever existed).
 New needs arise regularly, whether functional or not: adding functionalities, installing on new types of ma-
 chines, adapting to new standards...
-Meeting all these needs requires ever more modifications to the oModern Pythonriginal code, grouped together under the general term «maintenance».
+Meeting all these needs requires ever more modifications to the original code, grouped together under the general term «maintenance».
 To manage the organization of maintenance, agile methods have replaced the old development methods.
 However, it is still necessary to work with old code and to produce new code.
 In a world where software maintenance is becoming an increasingly important part of the IT department’s workload, the project management method must not remain the only agile element in a team: it has become a necessity to produce software that are *agile*.
