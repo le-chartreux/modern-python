@@ -23,7 +23,8 @@ cd cleather
 While not mandatory, it's highly recommended to use a version control system for tracking changes in your project.
 This tutorial exclusively focuses on Python development, and therefore, it does not provide guidance on using Git.
 However, if you're interested in improving your Git workflow, you can explore resources like [Conventional Commits](https://www.conventionalcommits.org/) to enhance the cleanliness and structure of your version control practices.
-We'll initialize [Git](https://git-scm.com/) to manage version control.
+
+We'll initialize [Git](https://git-scm.com/) to manage version control with the commmand bellow:
 
 ```sh
 git init
